@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0.0",
+  "default_language": "en-US",
+  "default_target_market": "US",
+  "platforms": {
+    "amazon": {
+      "name": "Amazon",
+      "rule_source": "平台规则应独立维护；不要在前端写死字符限制。",
+      "max_length_default": 75,
+      "notes": [
+        "字符长度、特殊字符、重复词等规则应从platform_rules配置读取。",
+        "不同类目可能存在差异，生产环境建议按类目维护。"
+      ]
+    },
+    "shein": {
+      "name": "SHEIN",
+      "rule_source": "公开商品优化规范 + 自建标题规则",
+      "max_length_default": 120,
+      "notes": [
+        "建议将SHEIN规则做成可配置项，避免硬编码。"
+      ]
+    },
+    "temu": {
+      "name": "Temu",
+      "rule_source": "公开商品信息/规则 + 自建标题规则",
+      "max_length_default": 120,
+      "notes": [
+        "建议按站点、类目维护独立规则。"
+      ]
+    },
+    "generic": {
+      "name": "通用海外",
+      "rule_source": "自建规则",
+      "max_length_default": 140
+    }
+  },
+  "category_rules": {
+    "shirt": {
+      "name": "衬衫",
+      "english": "Shirt",
+      "source_priority": "user_uploaded_image",
+      "required": [
+        {
+          "dimension": "品类(Category)",
+          "priority": 1
+        },
+        {
+          "dimension": "图案/花色(Pattern)",
+          "priority": 2
+        },
+        {
+          "dimension": "领型(Neckline)",
+          "priority": 3
+        }
+      ],
+      "high_priority_supplements": [
+        {
+          "dimension": "场景(Occasion)",
+          "priority": 4
+        },
+        {
+          "dimension": "袖长(Sleeve)",
+          "priority": 5
+        },
+        {
+          "dimension": "风格(Style)",
+          "priority": 6
+        }
+      ],
+      "optional_extensions": [
+        {
+          "dimension": "面料/材质(Material)",
+          "priority": 7
+        },
+        {
+          "dimension": "闭合方式(Closure)",
+          "priority": 8
+        },
+        {
+          "dimension": "颜色(Color)",
+          "priority": 9
+        }
+      ],
+      "template": [
+        "category",
+        "pattern",
+        "neckline",
+        "occasion",
+        "sleeve",
+        "style",
+        "material",
+        "closure",
+        "color"
+      ],
+      "generation_policy": {
+        "minimum_dimensions": 3,
+        "recommended_dimensions": 6,
+        "maximum_dimensions": 9,
+        "avoid_fabrication": true
+      }
+    },
+    "jacket": {
+      "name": "夹克外套",
+      "english": "Jacket",
+      "source_priority": "provisional_rule",
+      "note": "用户提供的图片未单独列出夹克行；以下为V1临时规则，建议后续根据商家实际标题数据迭代。",
+      "required": [
+        {
+          "dimension": "品类(Category)",
+          "priority": 1
+        },
+        {
+          "dimension": "场景(Occasion)",
+          "priority": 2
+        },
+        {
+          "dimension": "闭合方式(Closure)",
+          "priority": 3
+        }
+      ],
+      "high_priority_supplements": [
+        {
+          "dimension": "季节(Season)",
+          "priority": 4
+        },
+        {
+          "dimension": "版型(Fit)",
+          "priority": 5
+        },
+        {
+          "dimension": "风格(Style)",
+          "priority": 6
+        }
+      ],
+      "optional_extensions": [
+        {
+          "dimension": "面料/材质(Material)",
+          "priority": 7
+        },
+        {
+          "dimension": "功能特性(Feature)",
+          "priority": 8
+        },
+        {
+          "dimension": "颜色(Color)",
+          "priority": 9
+        },
+        {
+          "dimension": "领型(Neckline)",
+          "priority": 10
+        },
+        {
+          "dimension": "细节(Detail)",
+          "priority": 11
+        }
+      ],
+      "template": [
+        "category",
+        "occasion",
+        "closure",
+        "season",
+        "fit",
+        "style",
+        "material",
+        "feature",
+        "color",
+        "neckline",
+        "detail"
+      ],
+      "generation_policy": {
+        "minimum_dimensions": 3,
+        "recommended_dimensions": 6,
+        "maximum_dimensions": 10,
+        "avoid_fabrication": true
+      }
+    }
+  },
+  "dimension_alias": {
+    "category": "品类(Category)",
+    "pattern": "图案/花色(Pattern)",
+    "occasion": "场景(Occasion)",
+    "pack_set": "套装规格(Pack/Set)",
+    "season": "季节(Season)",
+    "fit": "版型(Fit)",
+    "target": "目标人群(Target)",
+    "detail": "细节(Detail)",
+    "waist": "腰型(Waist)",
+    "sleeve": "袖长(Sleeve)",
+    "length": "长度(Length)",
+    "closure": "闭合方式(Closure)",
+    "material": "面料/材质(Material)",
+    "neckline": "领型(Neckline)",
+    "color": "颜色(Color)",
+    "style": "风格(Style)",
+    "feature": "功能特性(Feature)"
+  },
+  "ai_generation_policy": {
+    "language": "English",
+    "rules": [
+      "只使用商家提供或词库中真实存在的商品属性。",
+      "禁止凭空增加材质、功能、场景、款式或认证信息。",
+      "优先按照category_rules中的priority顺序组合。",
+      "必选维度不足时提示商家补充，而不是编造。",
+      "高优补充用于提升信息密度；额外拓展仅在标题长度允许时使用。",
+      "避免无意义营销词堆叠，例如best、hot、new等，除非平台规则和商品属性明确允许。"
+    ]
+  }
+}
