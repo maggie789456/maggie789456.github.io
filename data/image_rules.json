@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "file": "分维度枚举词_中英对照.xlsx",
+    "sheet": "图片类型"
+  },
+  "supported_categories": [
+    "shirt",
+    "jacket"
+  ],
+  "image_types": [
+    {
+      "type": "平铺",
+      "core_expression": "展示服装细节",
+      "advantage": "去除身材不同、动作遮挡等一切干扰",
+      "recommended_categories": [
+        "印花T",
+        "衬衫",
+        "套装",
+        "工装裤",
+        "有结构细节的品"
+      ]
+    },
+    {
+      "type": "3D图",
+      "core_expression": "展现服装的版型和细节",
+      "advantage": "比平铺更形象",
+      "recommended_categories": []
+    },
+    {
+      "type": "挂拍",
+      "core_expression": "版型轮廓",
+      "advantage": "证明衣服离开模特也成立",
+      "recommended_categories": [
+        "POLO",
+        "衬衫",
+        "T恤",
+        "套装"
+      ]
+    },
+    {
+      "type": "人台图",
+      "core_expression": "弱真人化的版型展示",
+      "advantage": "展现版型轮廓",
+      "recommended_categories": [
+        "正装"
+      ]
+    },
+    {
+      "type": "搭配平铺",
+      "core_expression": "提供协调搭配",
+      "advantage": null,
+      "recommended_categories": [
+        "套装"
+      ]
+    },
+    {
+      "type": "半身模拍",
+      "core_expression": "建立代入感",
+      "advantage": "聚焦单品",
+      "recommended_categories": [
+        "长裤",
+        "polo",
+        "衬衫"
+      ]
+    },
+    {
+      "type": "全身模拍",
+      "core_expression": "让用户判断自己穿上后的比例、提供搭配模板",
+      "advantage": null,
+      "recommended_categories": [
+        "连体衣",
+        "套装",
+        "正装"
+      ]
+    },
+    {
+      "type": "动态抓拍",
+      "core_expression": "氛围感，证明穿搭在真实场景里成立",
+      "advantage": "增强真实性",
+      "recommended_categories": []
+    },
+    {
+      "type": "细节特写",
+      "core_expression": "建立品质信任，瞬间拉拢追求品质、个性的用户",
+      "advantage": "展示设计细节、面料优势",
+      "recommended_categories": [
+        "高件单商品"
+      ]
+    }
+  ],
+  "v1_recommendations": {
+    "shirt": [
+      "平铺",
+      "挂拍",
+      "半身模拍",
+      "细节特写",
+      "动态抓拍"
+    ],
+    "jacket": [
+      "平铺",
+      "挂拍",
+      "人台图",
+      "全身模拍",
+      "动态抓拍",
+      "细节特写"
+    ]
+  }
+}
