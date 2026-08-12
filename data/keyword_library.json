@@ -1,0 +1,3854 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "file": "分维度枚举词_中英对照.xlsx",
+    "sheet": "分维度枚举词中英对照",
+    "note": "词库由用户提供的Excel转换；英文变体按原表逗号分隔。"
+  },
+  "supported_platforms": [
+    "amazon",
+    "shein",
+    "temu",
+    "generic"
+  ],
+  "supported_categories": [
+    "shirt",
+    "jacket"
+  ],
+  "dimensions": {
+    "品类(Category)": 49,
+    "版型(Fit)": 6,
+    "领型(Neckline)": 11,
+    "闭合方式(Closure)": 10,
+    "目标人群(Target)": 6,
+    "风格(Style)": 9,
+    "图案/花色(Pattern)": 38,
+    "场景(Occasion)": 43,
+    "季节(Season)": 16,
+    "细节(Detail)": 21,
+    "长度(Length)": 5,
+    "袖长(Sleeve)": 11,
+    "腰型(Waist)": 5,
+    "功能特性(Feature)": 5,
+    "面料/材质(Material)": 27,
+    "套装规格(Pack/Set)": 25,
+    "颜色(Color)": 32
+  },
+  "keywords": [
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "T恤",
+      "en": "T-Shirt",
+      "variants": [
+        "t-shirt",
+        "tshirt",
+        "tee",
+        "tshirts",
+        "tees"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "衬衫",
+      "en": "Shirt",
+      "variants": [
+        "shirt",
+        "shirts"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "Polo衫",
+      "en": "Polo Shirt",
+      "variants": [
+        "polo",
+        "polo shirt"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "背心",
+      "en": "Tank/Vest",
+      "variants": [
+        "tank",
+        "tank top",
+        "vest",
+        "waistcoat",
+        "sleeveless top"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "针织衫",
+      "en": "Knitwear",
+      "variants": [
+        "knitwear",
+        "knit",
+        "knitted"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "毛衣",
+      "en": "Sweater",
+      "variants": [
+        "sweater",
+        "sweaters",
+        "pullover"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "上衣类",
+      "zh": "卫衣",
+      "en": "Hoodie/Sweatshirt",
+      "variants": [
+        "hoodie",
+        "hoodies",
+        "sweatshirt",
+        "sweatshirts"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "夹克",
+      "en": "Jacket",
+      "variants": [
+        "jacket",
+        "jackets"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "风衣",
+      "en": "Trench Coat",
+      "variants": [
+        "trench coat",
+        "trench",
+        "windbreaker"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "冲锋衣",
+      "en": "Hard Shell/Windbreaker",
+      "variants": [
+        "windbreaker",
+        "hard shell",
+        "outdoor jacket"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "牛仔外套",
+      "en": "Denim Jacket",
+      "variants": [
+        "denim jacket",
+        "jean jacket"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "棒球服",
+      "en": "Baseball Jacket/Varsity",
+      "variants": [
+        "baseball jacket",
+        "varsity jacket",
+        "letterman"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "飞行夹克",
+      "en": "Bomber Jacket",
+      "variants": [
+        "bomber jacket",
+        "bomber",
+        "flight jacket"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "皮夹克",
+      "en": "Leather Jacket",
+      "variants": [
+        "leather jacket"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "棉服",
+      "en": "Padded Jacket/Cotton Coat",
+      "variants": [
+        "padded jacket",
+        "cotton coat",
+        "quilted jacket",
+        "puffer"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "羽绒服",
+      "en": "Down Jacket/Puffer",
+      "variants": [
+        "down jacket",
+        "puffer jacket",
+        "puffer",
+        "down coat"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "马甲",
+      "en": "Vest/Gilet",
+      "variants": [
+        "vest",
+        "gilet",
+        "waistcoat"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "外套类",
+      "zh": "西装外套",
+      "en": "Blazer/Suit Jacket",
+      "variants": [
+        "blazer",
+        "suit jacket",
+        "sports coat",
+        "sport coat"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "休闲裤",
+      "en": "Casual Pants",
+      "variants": [
+        "casual pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "工装裤",
+      "en": "Cargo Pants",
+      "variants": [
+        "cargo pants",
+        "cargo",
+        "cargo trousers"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "牛仔裤",
+      "en": "Jeans",
+      "variants": [
+        "jeans",
+        "denim pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "运动裤",
+      "en": "Sweatpants/Track Pants",
+      "variants": [
+        "sweatpants",
+        "track pants",
+        "athletic pants",
+        "joggers"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "束脚裤",
+      "en": "Joggers/Tapered Pants",
+      "variants": [
+        "joggers",
+        "jogger",
+        "tapered pants",
+        "cuffed pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "短裤",
+      "en": "Shorts",
+      "variants": [
+        "shorts",
+        "short"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "沙滩裤",
+      "en": "Boardshorts/Beach Shorts",
+      "variants": [
+        "boardshorts",
+        "beach shorts",
+        "swim shorts",
+        "trunks"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "西裤",
+      "en": "Dress Pants/Trousers",
+      "variants": [
+        "dress pants",
+        "trousers",
+        "suit pants",
+        "formal pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "直筒裤",
+      "en": "Straight-Leg Pants",
+      "variants": [
+        "straight-leg pants",
+        "straight pants",
+        "straight leg"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "阔腿裤",
+      "en": "Wide-Leg Pants",
+      "variants": [
+        "wide-leg pants",
+        "wide leg",
+        "wide-leg trousers"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "裤装类",
+      "zh": "五分裤",
+      "en": "Knee-Length Shorts/Bermuda",
+      "variants": [
+        "bermuda shorts",
+        "knee-length shorts",
+        "3/4 shorts",
+        "half pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "运动套装",
+      "en": "Sports Set/Track Set",
+      "variants": [
+        "sports set",
+        "track set",
+        "athletic set",
+        "activewear set"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "休闲套装",
+      "en": "Casual Set",
+      "variants": [
+        "casual set",
+        "leisure set"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "西装套装",
+      "en": "Suit Set/Formal Suit",
+      "variants": [
+        "suit set",
+        "suit",
+        "suits",
+        "formal suit",
+        "business suit"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "卫衣套装",
+      "en": "Hoodie Set",
+      "variants": [
+        "hoodie set",
+        "sweatshirt set"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "T恤短裤套装",
+      "en": "T-Shirt & Shorts Set",
+      "variants": [
+        "t-shirt and shorts set",
+        "tee shorts set",
+        "t-shirt shorts set"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "两件套",
+      "en": "Two-Piece Set",
+      "variants": [
+        "two-piece",
+        "two piece",
+        "2-piece",
+        "2pc",
+        "2pcs"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "套装类",
+      "zh": "三件套",
+      "en": "Three-Piece Set",
+      "variants": [
+        "three-piece",
+        "three piece",
+        "3-piece",
+        "3pc",
+        "3pcs"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "睡衣",
+      "en": "Pajamas/Sleepwear",
+      "variants": [
+        "pajamas",
+        "pyjamas",
+        "sleepwear",
+        "sleep wear",
+        "sleep shirt"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "家居服",
+      "en": "Loungewear/Home Wear",
+      "variants": [
+        "loungewear",
+        "home wear",
+        "home clothes",
+        "house wear"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "睡袍",
+      "en": "Nightgown/Sleep Robe",
+      "variants": [
+        "nightgown",
+        "night gown",
+        "sleep robe",
+        "sleeprobe"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "浴袍",
+      "en": "Bathrobe",
+      "variants": [
+        "bathrobe",
+        "bath robe",
+        "robe"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "睡裤",
+      "en": "Sleep Pants/Pyjama Bottoms",
+      "variants": [
+        "sleep pants",
+        "pajama pants",
+        "pyjama bottoms",
+        "lounge pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "家居/睡衣类",
+      "zh": "家居裤",
+      "en": "Home Pants/Lounge Pants",
+      "variants": [
+        "home pants",
+        "lounge pants",
+        "house pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "健身背心",
+      "en": "Gym Tank/Workout Tank",
+      "variants": [
+        "gym tank",
+        "workout tank",
+        "fitness tank",
+        "training tank"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "运动短裤",
+      "en": "Athletic Shorts/Sports Shorts",
+      "variants": [
+        "athletic shorts",
+        "sports shorts",
+        "gym shorts",
+        "workout shorts"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "训练裤",
+      "en": "Training Pants",
+      "variants": [
+        "training pants",
+        "training trousers",
+        "workout pants"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "泳裤",
+      "en": "Swim Trunks",
+      "variants": [
+        "swim trunks",
+        "swimming trunks",
+        "swim shorts",
+        "trunks"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "沙滩裤",
+      "en": "Boardshorts/Beach Shorts",
+      "variants": [
+        "boardshorts",
+        "beach shorts",
+        "swim shorts"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "速干衣",
+      "en": "Quick-Dry Shirt",
+      "variants": [
+        "quick-dry shirt",
+        "quick dry shirt",
+        "fast-dry shirt",
+        "moisture-wicking shirt"
+      ]
+    },
+    {
+      "dimension": "品类(Category)",
+      "subcategory": "运动/泳装类",
+      "zh": "骑行服",
+      "en": "Cycling Wear",
+      "variants": [
+        "cycling wear",
+        "cycling jersey",
+        "biking wear",
+        "bike shirt"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "宽松版",
+      "en": "Loose Fit",
+      "variants": [
+        "loose fit",
+        "loose",
+        "loose-fit",
+        "relaxed fit",
+        "relaxed"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "修身版",
+      "en": "Slim Fit",
+      "variants": [
+        "slim fit",
+        "slim-fit",
+        "slim",
+        "muscle fit"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "常规版",
+      "en": "Regular Fit",
+      "variants": [
+        "regular fit",
+        "regular-fit",
+        "regular",
+        "standard fit"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "合身版",
+      "en": "Tailored Fit",
+      "variants": [
+        "tailored fit",
+        "fitted",
+        "fitted fit"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "廓形版",
+      "en": "Oversized/Boxy",
+      "variants": [
+        "oversized",
+        "oversize",
+        "boxy fit",
+        "boxy",
+        "baggy",
+        "relaxed fit"
+      ]
+    },
+    {
+      "dimension": "版型(Fit)",
+      "subcategory": null,
+      "zh": "oversize风",
+      "en": "Oversized Style",
+      "variants": [
+        "oversized",
+        "oversize",
+        "oversized fit",
+        "oversized style"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "圆领",
+      "en": "Crew Neck/Round Neck",
+      "variants": [
+        "crew neck",
+        "crewneck",
+        "round neck",
+        "round-neck"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "V领",
+      "en": "V-Neck",
+      "variants": [
+        "v-neck",
+        "v neck",
+        "vneck"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "翻领",
+      "en": "Lapel/Collar",
+      "variants": [
+        "lapel",
+        "collar",
+        "turned-down collar",
+        "fold-over collar"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "立领",
+      "en": "Stand Collar",
+      "variants": [
+        "stand collar",
+        "stand-collar",
+        "stand-up collar",
+        "mandarin collar"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "亨利领",
+      "en": "Henley Neck",
+      "variants": [
+        "henley",
+        "henley neck",
+        "henley collar",
+        "henley shirt"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "半高领",
+      "en": "Mock Neck/Half High Collar",
+      "variants": [
+        "mock neck",
+        "mockneck",
+        "half high collar",
+        "half-high collar",
+        "mock turtleneck"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "高领",
+      "en": "Turtleneck/High Neck",
+      "variants": [
+        "turtleneck",
+        "turtle neck",
+        "high neck",
+        "high-collar",
+        "roll neck"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "扣领",
+      "en": "Button-Down Collar",
+      "variants": [
+        "button-down collar",
+        "button-down",
+        "button down"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "古巴领",
+      "en": "Cuban Collar",
+      "variants": [
+        "cuban collar",
+        "cuban",
+        "camp collar",
+        "cabin collar",
+        "revere collar"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "开领",
+      "en": "Open Collar/Notch Lapel",
+      "variants": [
+        "open collar",
+        "open-collar",
+        "notch lapel",
+        "notched collar"
+      ]
+    },
+    {
+      "dimension": "领型(Neckline)",
+      "subcategory": null,
+      "zh": "Polo领",
+      "en": "Polo Collar",
+      "variants": [
+        "polo collar",
+        "polo",
+        "polo shirt collar",
+        "knit collar"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "套头",
+      "en": "Pullover",
+      "variants": [
+        "pullover",
+        "pull-on",
+        "pull on",
+        "slip-on",
+        "slip on",
+        "overhead"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "拉链",
+      "en": "Zipper",
+      "variants": [
+        "zipper",
+        "zip",
+        "zip-up",
+        "zip up",
+        "zip closure",
+        "zipper closure"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "半拉链",
+      "en": "Half-Zip",
+      "variants": [
+        "half-zip",
+        "half zip",
+        "quarter-zip",
+        "quarter zip",
+        "1/4 zip",
+        "partial zip"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "纽扣",
+      "en": "Button",
+      "variants": [
+        "button",
+        "buttons",
+        "button closure"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "单排扣",
+      "en": "Single-Breasted",
+      "variants": [
+        "single-breasted",
+        "single breasted",
+        "single row button"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "双排扣",
+      "en": "Double-Breasted",
+      "variants": [
+        "double-breasted",
+        "double breasted",
+        "double row button"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "抽绳",
+      "en": "Drawstring",
+      "variants": [
+        "drawstring",
+        "draw string",
+        "draw-string"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "松紧腰",
+      "en": "Elastic Waist",
+      "variants": [
+        "elastic waist",
+        "elasticated waist",
+        "elastic band",
+        "elastane waist"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "拉链门襟",
+      "en": "Zipper Fly/Front",
+      "variants": [
+        "zipper fly",
+        "zip fly",
+        "zip-front",
+        "zipper front",
+        "zipper placket"
+      ]
+    },
+    {
+      "dimension": "闭合方式(Closure)",
+      "subcategory": null,
+      "zh": "纽扣门襟",
+      "en": "Button Fly/Front",
+      "variants": [
+        "button fly",
+        "button-front",
+        "button front",
+        "button placket",
+        "button-up front"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "男士",
+      "en": "Men's",
+      "variants": [
+        "men's",
+        "mens",
+        "men",
+        "man's",
+        "man",
+        "male"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "儿童",
+      "en": "Kids/Children",
+      "variants": [
+        "kids",
+        "kids'",
+        "children",
+        "childrens",
+        "child"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "大码男士",
+      "en": "Plus Size Men's",
+      "variants": [
+        "plus size men",
+        "big and tall",
+        "oversized men",
+        "plus-size men"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "女童",
+      "en": "Girls",
+      "variants": [
+        "girls",
+        "girl's",
+        "girl"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "男童",
+      "en": "Boys",
+      "variants": [
+        "boys",
+        "boy's",
+        "boy"
+      ]
+    },
+    {
+      "dimension": "目标人群(Target)",
+      "subcategory": null,
+      "zh": "中性",
+      "en": "Unisex",
+      "variants": [
+        "unisex",
+        "gender neutral",
+        "neutral",
+        "couple",
+        "matching"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "民族风",
+      "en": "Ethnic",
+      "variants": [
+        "ethnic",
+        "ethnic style",
+        "folk style",
+        "tribal"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "商务风",
+      "en": "Business Style",
+      "variants": [
+        "business",
+        "business style",
+        "business professional"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "通勤风",
+      "en": "Commuter Style",
+      "variants": [
+        "commuter",
+        "commute",
+        "commuting style",
+        "work wear style"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "休闲日常",
+      "en": "Casual/Daily",
+      "variants": [
+        "casual",
+        "everyday",
+        "daily",
+        "leisure",
+        "leisurely"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "y2k",
+      "en": "Y2K",
+      "variants": [
+        "y2k",
+        "y2k style",
+        "y2k fashion",
+        "2000s style",
+        "millennium style"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "街头",
+      "en": "Streetwear",
+      "variants": [
+        "streetwear",
+        "street",
+        "street style",
+        "street fashion"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "复古",
+      "en": "Vintage/Retro",
+      "variants": [
+        "vintage",
+        "retro",
+        "classic style",
+        "old school"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "可爱",
+      "en": "Cute",
+      "variants": [
+        "cute",
+        "kawaii",
+        "sweet",
+        "adorable"
+      ]
+    },
+    {
+      "dimension": "风格(Style)",
+      "subcategory": null,
+      "zh": "潮流",
+      "en": "Trendy/Fashion",
+      "variants": [
+        "trendy",
+        "fashion",
+        "fashionable",
+        "stylish",
+        "trend",
+        "trendy style"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "纯色",
+      "en": "Solid Color",
+      "variants": [
+        "solid color",
+        "solid",
+        "plain"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "条纹",
+      "en": "Striped",
+      "variants": [
+        "stripe",
+        "striped",
+        "stripe pattern",
+        "pinstripe"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "格纹",
+      "en": "Plaid/Checkered",
+      "variants": [
+        "plaid",
+        "checkered",
+        "check",
+        "checked",
+        "tartan",
+        "gingham"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "撞色",
+      "en": "Color-Block/Contrast",
+      "variants": [
+        "color-block",
+        "color block",
+        "colorblock",
+        "color-blocking",
+        "contrast color",
+        "contrast"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "拼色",
+      "en": "Patchwork/Color Patch",
+      "variants": [
+        "patchwork",
+        "color patch",
+        "patch",
+        "pieced color"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "渐变",
+      "en": "Gradient/Ombre",
+      "variants": [
+        "gradient",
+        "ombre",
+        "faded",
+        "fade",
+        "ombre effect",
+        "color gradient"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "豹纹",
+      "en": "Leopard Print",
+      "variants": [
+        "leopard",
+        "leopard print",
+        "leopard pattern",
+        "animal print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "基础花色",
+      "zh": "波点",
+      "en": "Polka Dot",
+      "variants": [
+        "polka dot",
+        "polka-dot",
+        "dotted",
+        "dots",
+        "dot pattern"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花类",
+      "zh": "字母印花",
+      "en": "Letter Print",
+      "variants": [
+        "letter",
+        "letter print",
+        "text print",
+        "typography",
+        "letter graphic"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花类",
+      "zh": "数字印花",
+      "en": "Number Print",
+      "variants": [
+        "number",
+        "number print",
+        "numeral print",
+        "numeric graphic"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花类",
+      "zh": "图形印花",
+      "en": "Graphic Print",
+      "variants": [
+        "graphic",
+        "graphic print",
+        "graphic pattern",
+        "graphic design"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花类",
+      "zh": "几何印花",
+      "en": "Geometric Print",
+      "variants": [
+        "geometric",
+        "geometric print",
+        "geometric pattern",
+        "abstract"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "迷彩风",
+      "en": "Camouflage",
+      "variants": [
+        "camouflage",
+        "camo",
+        "camo print",
+        "camo pattern"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "复古风图案",
+      "en": "Vintage Pattern",
+      "variants": [
+        "vintage pattern",
+        "vintage print",
+        "retro pattern",
+        "retro print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "街头风图案",
+      "en": "Streetwear Pattern",
+      "variants": [
+        "streetwear pattern",
+        "street print",
+        "urban print",
+        "graffiti"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "国潮风图案",
+      "en": "Chinese Trend Pattern",
+      "variants": [
+        "chinese trend",
+        "china trend",
+        "national trend",
+        "c-pop",
+        "guochao"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "波西米亚风",
+      "en": "Bohemian",
+      "variants": [
+        "bohemian",
+        "boho",
+        "boho-chic",
+        "boho print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "y2k风",
+      "en": "Y2K Pattern",
+      "variants": [
+        "y2k pattern",
+        "y2k print",
+        "2000s graphic",
+        "millennium graphic"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "风格图案",
+      "zh": "热带风",
+      "en": "Tropical",
+      "variants": [
+        "tropical",
+        "tropical pattern",
+        "tropical print",
+        "tropical design"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "节日图案",
+      "zh": "圣诞图案",
+      "en": "Christmas Pattern",
+      "variants": [
+        "christmas",
+        "christmas pattern",
+        "christmas print",
+        "xmas",
+        "santa",
+        "reindeer",
+        "snowflake"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "节日图案",
+      "zh": "万圣节图案",
+      "en": "Halloween Pattern",
+      "variants": [
+        "halloween",
+        "halloween pattern",
+        "halloween print",
+        "pumpkin",
+        "ghost",
+        "skull halloween"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "节日图案",
+      "zh": "独立日",
+      "en": "Independence Day",
+      "variants": [
+        "independence day",
+        "4th of july",
+        "july 4th",
+        "stars and stripes",
+        "patriotic"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "节日图案",
+      "zh": "亡灵节",
+      "en": "Day of the Dead",
+      "variants": [
+        "day of the dead",
+        "dia de los muertos",
+        "sugar skull",
+        "mexico"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "节日图案",
+      "zh": "父亲节",
+      "en": "Father's Day",
+      "variants": [
+        "father's day",
+        "fathers day",
+        "dad",
+        "daddy"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "动物",
+      "en": "Animal",
+      "variants": [
+        "animal",
+        "animal print",
+        "animal pattern",
+        "creature"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "骷髅",
+      "en": "Skull",
+      "variants": [
+        "skull",
+        "skull print",
+        "skull pattern",
+        "skeleton",
+        "death head"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "火焰",
+      "en": "Flame",
+      "variants": [
+        "flame",
+        "flames",
+        "fire",
+        "fire print",
+        "flame pattern"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "摩托车",
+      "en": "Motorcycle",
+      "variants": [
+        "motorcycle",
+        "motorcycle print",
+        "motorbike",
+        "harley",
+        "biker graphic"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "花卉",
+      "en": "Floral/Flower",
+      "variants": [
+        "floral",
+        "flower",
+        "flowers",
+        "botanical",
+        "floral print",
+        "flower pattern"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "元素图案",
+      "zh": "棕榈叶",
+      "en": "Palm Leaf",
+      "variants": [
+        "palm",
+        "palm leaf",
+        "palm print",
+        "tropical leaf",
+        "monstera",
+        "palm tree"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "胸前小标",
+      "en": "Chest Small Logo",
+      "variants": [
+        "chest logo",
+        "chest small logo",
+        "chest badge",
+        "chest emblem",
+        "front small logo"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "背部大印花",
+      "en": "Back Large Print",
+      "variants": [
+        "back print",
+        "back large print",
+        "back graphic",
+        "large back print",
+        "full back print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "袖口图案",
+      "en": "Sleeve Print",
+      "variants": [
+        "sleeve print",
+        "sleeve graphic",
+        "sleeve pattern",
+        "cuff print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "满版图案",
+      "en": "All-Over Print",
+      "variants": [
+        "all-over print",
+        "all over print",
+        "full print",
+        "allover",
+        "all-over pattern"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "局部印花",
+      "en": "Partial Print",
+      "variants": [
+        "partial print",
+        "local print",
+        "localized print",
+        "spot print"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "前胸字母",
+      "en": "Front Letter Print",
+      "variants": [
+        "front letter",
+        "front text",
+        "chest letter",
+        "front lettering"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "后背字母",
+      "en": "Back Letter Print",
+      "variants": [
+        "back letter",
+        "back text",
+        "back lettering",
+        "rear letter"
+      ]
+    },
+    {
+      "dimension": "图案/花色(Pattern)",
+      "subcategory": "印花位置",
+      "zh": "侧边印花",
+      "en": "Side Print",
+      "variants": [
+        "side print",
+        "side graphic",
+        "side pattern",
+        "lateral print"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "日常",
+      "en": "Everyday/Daily",
+      "variants": [
+        "everyday",
+        "daily",
+        "day-to-day"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "通勤",
+      "en": "Commuting",
+      "variants": [
+        "commute",
+        "commuter",
+        "commuting"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "居家",
+      "en": "Home/Lounge",
+      "variants": [
+        "home",
+        "lounge",
+        "lounging",
+        "around the house"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "出街",
+      "en": "Going Out/Outing",
+      "variants": [
+        "outing",
+        "outings",
+        "going out",
+        "out and about",
+        "day out"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "休闲",
+      "en": "Casual/Leisure",
+      "variants": [
+        "casual",
+        "leisure",
+        "leisurely",
+        "relaxed"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "日常",
+      "zh": "约会",
+      "en": "Date",
+      "variants": [
+        "date",
+        "dating",
+        "date night"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "商务",
+      "en": "Business",
+      "variants": [
+        "business",
+        "business occasion"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "办公室",
+      "en": "Office",
+      "variants": [
+        "office",
+        "workplace"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "职场",
+      "en": "Workplace/Professional",
+      "variants": [
+        "work",
+        "professional",
+        "workplace"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "会议",
+      "en": "Meeting/Conference",
+      "variants": [
+        "meeting",
+        "conference",
+        "convention"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "正装",
+      "en": "Formal",
+      "variants": [
+        "formal",
+        "formal occasion",
+        "formal wear",
+        "formal attire"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "商务",
+      "zh": "商务休闲",
+      "en": "Business Casual",
+      "variants": [
+        "business casual",
+        "smart casual",
+        "business-casual"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "健身",
+      "en": "Gym/Fitness",
+      "variants": [
+        "gym",
+        "fitness",
+        "workout",
+        "exercise",
+        "training"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "跑步",
+      "en": "Running",
+      "variants": [
+        "running",
+        "run",
+        "jog",
+        "jogging"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "训练",
+      "en": "Training",
+      "variants": [
+        "training",
+        "workout",
+        "exercise",
+        "drill"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "篮球",
+      "en": "Basketball",
+      "variants": [
+        "basketball",
+        "bball",
+        "hoops"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "足球",
+      "en": "Soccer/Football",
+      "variants": [
+        "soccer",
+        "football",
+        "futbol"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "骑行",
+      "en": "Cycling",
+      "variants": [
+        "cycling",
+        "biking",
+        "bike riding"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "瑜伽",
+      "en": "Yoga",
+      "variants": [
+        "yoga",
+        "yogi",
+        "pilates"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "运动",
+      "zh": "高尔夫",
+      "en": "Golf",
+      "variants": [
+        "golf",
+        "golfing"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "户外",
+      "en": "Outdoor",
+      "variants": [
+        "outdoor",
+        "outdoors",
+        "outside"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "露营",
+      "en": "Camping",
+      "variants": [
+        "camping",
+        "camp",
+        "camper"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "徒步",
+      "en": "Hiking",
+      "variants": [
+        "hiking",
+        "hike",
+        "trekking",
+        "trek"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "登山",
+      "en": "Mountaineering/Climbing",
+      "variants": [
+        "mountaineering",
+        "climbing",
+        "mountain climbing",
+        "alpine"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "旅行",
+      "en": "Travel",
+      "variants": [
+        "travel",
+        "traveling",
+        "trip",
+        "journey"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "户外",
+      "zh": "钓鱼",
+      "en": "Fishing",
+      "variants": [
+        "fishing",
+        "fish",
+        "angling"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "海边",
+      "zh": "海边",
+      "en": "Seaside/Beach",
+      "variants": [
+        "seaside",
+        "beach",
+        "shore",
+        "coast"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "海边",
+      "zh": "沙滩",
+      "en": "Beach",
+      "variants": [
+        "beach",
+        "sandy beach",
+        "beachside"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "海边",
+      "zh": "度假",
+      "en": "Vacation",
+      "variants": [
+        "vacation",
+        "holiday",
+        "getaway",
+        "resort"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "海边",
+      "zh": "游泳",
+      "en": "Swimming",
+      "variants": [
+        "swimming",
+        "swim",
+        "swimming pool"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "海边",
+      "zh": "游船",
+      "en": "Cruise/Boating",
+      "variants": [
+        "cruise",
+        "cruising",
+        "boating",
+        "yacht",
+        "sailing"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "派对",
+      "en": "Party",
+      "variants": [
+        "party",
+        "club",
+        "nightclub",
+        "night out"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "节日",
+      "en": "Festival/Holiday",
+      "variants": [
+        "festival",
+        "holiday",
+        "carnival",
+        "celebration"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "圣诞",
+      "en": "Christmas",
+      "variants": [
+        "christmas",
+        "xmas",
+        "christmas day"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "万圣节",
+      "en": "Halloween",
+      "variants": [
+        "halloween",
+        "halloween night"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "新年",
+      "en": "New Year",
+      "variants": [
+        "new year",
+        "new year's",
+        "new year's eve",
+        "nye"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "派对节日",
+      "zh": "家庭聚会",
+      "en": "Family Gathering",
+      "variants": [
+        "family gathering",
+        "family party",
+        "family reunion",
+        "gathering"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "校园",
+      "en": "School/Campus",
+      "variants": [
+        "school",
+        "campus",
+        "college",
+        "university"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "街头",
+      "en": "Street",
+      "variants": [
+        "street",
+        "street style",
+        "urban"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "潮流",
+      "en": "Trendy/Fashion",
+      "variants": [
+        "trendy",
+        "fashion",
+        "stylish",
+        "trend"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "滑板",
+      "en": "Skateboarding",
+      "variants": [
+        "skate",
+        "skateboarding",
+        "skater",
+        "skateboard"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "嘻哈",
+      "en": "Hip Hop",
+      "variants": [
+        "hip hop",
+        "hiphop",
+        "rap",
+        "rap style"
+      ]
+    },
+    {
+      "dimension": "场景(Occasion)",
+      "subcategory": "校园街头",
+      "zh": "复古穿搭",
+      "en": "Vintage Outfit",
+      "variants": [
+        "vintage outfit",
+        "retro outfit",
+        "vintage style outfit"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "基本季节",
+      "zh": "春季",
+      "en": "Spring",
+      "variants": [
+        "spring",
+        "spring season"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "基本季节",
+      "zh": "夏季",
+      "en": "Summer",
+      "variants": [
+        "summer",
+        "summer season"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "基本季节",
+      "zh": "秋季",
+      "en": "Autumn/Fall",
+      "variants": [
+        "autumn",
+        "fall",
+        "autumn season",
+        "fall season"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "基本季节",
+      "zh": "冬季",
+      "en": "Winter",
+      "variants": [
+        "winter",
+        "winter season"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "春秋",
+      "en": "Spring/Autumn",
+      "variants": [
+        "spring/autumn",
+        "spring and autumn",
+        "spring fall",
+        "transitional"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "秋冬",
+      "en": "Autumn/Winter",
+      "variants": [
+        "autumn/winter",
+        "autumn and winter",
+        "fall/winter",
+        "fall winter"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "四季",
+      "en": "Four Seasons",
+      "variants": [
+        "four seasons",
+        "all seasons",
+        "4 seasons"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "夏日",
+      "en": "Summer Day",
+      "variants": [
+        "summer day",
+        "summer time",
+        "summertime"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "冬季保暖",
+      "en": "Winter Warm",
+      "variants": [
+        "winter warm",
+        "winter保暖",
+        "warm winter",
+        "thermal winter"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "跨季节",
+      "zh": "四季皆宜",
+      "en": "All-Season/Year-Round",
+      "variants": [
+        "all-season",
+        "all season",
+        "year-round",
+        "all-year",
+        "all year round"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "轻薄",
+      "en": "Lightweight",
+      "variants": [
+        "lightweight",
+        "light-weight",
+        "light weight",
+        "light",
+        "thin"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "透气",
+      "en": "Breathable",
+      "variants": [
+        "breathable",
+        "ventilated",
+        "ventilation"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "清凉",
+      "en": "Cooling/Refreshing",
+      "variants": [
+        "cooling",
+        "cool",
+        "refreshing",
+        "cool fabric",
+        "ice silk"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "保暖",
+      "en": "Warm",
+      "variants": [
+        "warm",
+        "warming",
+        "warmth"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "加厚",
+      "en": "Thickened/Heavy",
+      "variants": [
+        "thickened",
+        "thick",
+        "heavy",
+        "heavy-weight",
+        "heavyweight"
+      ]
+    },
+    {
+      "dimension": "季节(Season)",
+      "subcategory": "体感",
+      "zh": "防风",
+      "en": "Windproof",
+      "variants": [
+        "windproof",
+        "wind-proof",
+        "wind resistant",
+        "wind-resistant"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "口袋",
+      "zh": "多口袋",
+      "en": "Multi-Pocket",
+      "variants": [
+        "multi-pocket",
+        "multi pocket",
+        "multiple pockets",
+        "multi-pocket design"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "口袋",
+      "zh": "大口袋",
+      "en": "Large Pocket",
+      "variants": [
+        "large pocket",
+        "big pocket",
+        "oversized pocket"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "口袋",
+      "zh": "拉链口袋",
+      "en": "Zipper Pocket",
+      "variants": [
+        "zipper pocket",
+        "zip pocket",
+        "zippered pocket"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "口袋",
+      "zh": "侧口袋",
+      "en": "Side Pocket",
+      "variants": [
+        "side pocket",
+        "side pockets",
+        "lateral pocket"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "口袋",
+      "zh": "胸前口袋",
+      "en": "Chest Pocket",
+      "variants": [
+        "chest pocket",
+        "chest pockets",
+        "breast pocket"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "帽子",
+      "zh": "连帽",
+      "en": "Hooded",
+      "variants": [
+        "hooded",
+        "hood",
+        "hooded design",
+        "with hood"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "帽子",
+      "zh": "可拆卸帽",
+      "en": "Detachable Hood",
+      "variants": [
+        "detachable hood",
+        "removable hood",
+        "detachable cap"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "帽子",
+      "zh": "抽绳帽",
+      "en": "Drawstring Hood",
+      "variants": [
+        "drawstring hood",
+        "drawstring hooded",
+        "adjustable hood"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "下摆",
+      "zh": "罗纹下摆",
+      "en": "Ribbed Hem",
+      "variants": [
+        "ribbed hem",
+        "ribbed bottom",
+        "ribbed cuff hem"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "下摆",
+      "zh": "弹力裤脚",
+      "en": "Elastic Cuffs",
+      "variants": [
+        "elastic cuffs",
+        "elastic ankle",
+        "elastic hem",
+        "cuffed ankle"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "下摆",
+      "zh": "束脚",
+      "en": "Cuffed/Elastic Ankle",
+      "variants": [
+        "cuffed",
+        "cuffed ankle",
+        "elastic ankle",
+        "banded bottom"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "下摆",
+      "zh": "开叉下摆",
+      "en": "Slit Hem",
+      "variants": [
+        "slit hem",
+        "side slit",
+        "vented hem",
+        "split hem",
+        "side vent"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "拼接",
+      "en": "Splicing/Paneling",
+      "variants": [
+        "splicing",
+        "panel",
+        "paneling",
+        "color panel",
+        "splice",
+        "pieced"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "撞色",
+      "en": "Contrast Color",
+      "variants": [
+        "contrast color",
+        "color contrast",
+        "contrasting color",
+        "contrast"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "破洞",
+      "en": "Ripped/Torn",
+      "variants": [
+        "ripped",
+        "torn",
+        "distressed",
+        "distress",
+        "ripped jeans",
+        "hole"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "做旧",
+      "en": "Washed/Distressed",
+      "variants": [
+        "washed",
+        "distressed",
+        "vintage wash",
+        "faded",
+        "stonewashed",
+        "acid wash"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "压褶",
+      "en": "Pleated",
+      "variants": [
+        "pleated",
+        "pleat",
+        "pressed pleat",
+        "creased"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "抽绳",
+      "en": "Drawstring",
+      "variants": [
+        "drawstring",
+        "draw string",
+        "draw-string",
+        "adjustable cord"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "刺绣",
+      "en": "Embroidery",
+      "variants": [
+        "embroidery",
+        "embroidered",
+        "embroidered detail",
+        "embroidery pattern"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "印花",
+      "en": "Print",
+      "variants": [
+        "print",
+        "printed",
+        "printing",
+        "printed detail"
+      ]
+    },
+    {
+      "dimension": "细节(Detail)",
+      "subcategory": "工艺",
+      "zh": "贴布",
+      "en": "Applique/Patch",
+      "variants": [
+        "applique",
+        "appliqu",
+        "patch",
+        "patches",
+        "patchwork",
+        "fabric patch"
+      ]
+    },
+    {
+      "dimension": "长度(Length)",
+      "subcategory": null,
+      "zh": "常规款",
+      "en": "Regular Length",
+      "variants": [
+        "regular length",
+        "regular",
+        "standard length",
+        "normal length"
+      ]
+    },
+    {
+      "dimension": "长度(Length)",
+      "subcategory": null,
+      "zh": "短款",
+      "en": "Short/Cropped",
+      "variants": [
+        "short",
+        "short length",
+        "cropped",
+        "crop",
+        "cropped length"
+      ]
+    },
+    {
+      "dimension": "长度(Length)",
+      "subcategory": null,
+      "zh": "中长款",
+      "en": "Mid-Length",
+      "variants": [
+        "mid-length",
+        "midi",
+        "mid length",
+        "knee-length",
+        "calf-length"
+      ]
+    },
+    {
+      "dimension": "长度(Length)",
+      "subcategory": null,
+      "zh": "长款",
+      "en": "Long",
+      "variants": [
+        "long",
+        "long length",
+        "full length"
+      ]
+    },
+    {
+      "dimension": "长度(Length)",
+      "subcategory": null,
+      "zh": "加长款",
+      "en": "Extra Long/Extended",
+      "variants": [
+        "extra long",
+        "extended length",
+        "extra-long",
+        "extra length",
+        "x-long"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "短袖",
+      "en": "Short Sleeve",
+      "variants": [
+        "short sleeve",
+        "short-sleeve",
+        "short-sleeved"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "长袖",
+      "en": "Long Sleeve",
+      "variants": [
+        "long sleeve",
+        "long-sleeve",
+        "long-sleeved",
+        "full sleeve"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "无袖",
+      "en": "Sleeveless",
+      "variants": [
+        "sleeveless",
+        "no sleeve",
+        "sleeve-less"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "七分袖",
+      "en": "3/4 Sleeve",
+      "variants": [
+        "3/4 sleeve",
+        "three-quarter sleeve",
+        "3/4",
+        "three-quarter"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "五分袖",
+      "en": "Half Sleeve/Elbow Sleeve",
+      "variants": [
+        "half sleeve",
+        "half-sleeve",
+        "elbow sleeve",
+        "1/2 sleeve"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "落肩袖",
+      "en": "Drop Shoulder",
+      "variants": [
+        "drop shoulder",
+        "drop-shoulder",
+        "dropped shoulder",
+        "drop shoulder sleeve"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "插肩袖",
+      "en": "Raglan Sleeve",
+      "variants": [
+        "raglan",
+        "raglan sleeve",
+        "raglan-style",
+        "raglan cut"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "背心款",
+      "en": "Tank Style",
+      "variants": [
+        "tank",
+        "tank top",
+        "tank style",
+        "sleeveless top"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "无袖款",
+      "en": "Sleeveless Style",
+      "variants": [
+        "sleeveless",
+        "sleeveless style",
+        "no-sleeve style"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "宽袖",
+      "en": "Wide/Loose Sleeve",
+      "variants": [
+        "wide sleeve",
+        "loose sleeve",
+        "bell sleeve",
+        "flare sleeve",
+        "batwing sleeve"
+      ]
+    },
+    {
+      "dimension": "袖长(Sleeve)",
+      "subcategory": null,
+      "zh": "收口袖",
+      "en": "Cuffed Sleeve",
+      "variants": [
+        "cuffed sleeve",
+        "ribbed cuff",
+        "elastic cuff",
+        "fitted cuff",
+        "ribbed sleeve cuff"
+      ]
+    },
+    {
+      "dimension": "腰型(Waist)",
+      "subcategory": null,
+      "zh": "收腰",
+      "en": "Waist-Cinching/Fitted",
+      "variants": [
+        "waist-cinching",
+        "waist-cinching",
+        "fitted waist",
+        "slim waist",
+        "cinched waist",
+        "waist-defining"
+      ]
+    },
+    {
+      "dimension": "腰型(Waist)",
+      "subcategory": null,
+      "zh": "高腰",
+      "en": "High-Waist",
+      "variants": [
+        "high-waist",
+        "high waist",
+        "high-waisted",
+        "high-rise",
+        "high rise"
+      ]
+    },
+    {
+      "dimension": "腰型(Waist)",
+      "subcategory": null,
+      "zh": "松紧腰",
+      "en": "Elastic Waist",
+      "variants": [
+        "elastic waist",
+        "elasticated waist",
+        "elastic band",
+        "elastane waist"
+      ]
+    },
+    {
+      "dimension": "腰型(Waist)",
+      "subcategory": null,
+      "zh": "抽绳腰带",
+      "en": "Drawstring Waist",
+      "variants": [
+        "drawstring waist",
+        "drawstring belt",
+        "drawstring waistband",
+        "adjustable drawstring"
+      ]
+    },
+    {
+      "dimension": "腰型(Waist)",
+      "subcategory": null,
+      "zh": "系腰带",
+      "en": "Belted Waist",
+      "variants": [
+        "belt",
+        "belted",
+        "belt waist",
+        "belted waist",
+        "with belt",
+        "belt loops"
+      ]
+    },
+    {
+      "dimension": "功能特性(Feature)",
+      "subcategory": null,
+      "zh": "弹力",
+      "en": "Stretch/Elastic",
+      "variants": [
+        "stretch",
+        "stretchy",
+        "elastic",
+        "elastane",
+        "spandex"
+      ]
+    },
+    {
+      "dimension": "功能特性(Feature)",
+      "subcategory": null,
+      "zh": "速干",
+      "en": "Quick-Dry",
+      "variants": [
+        "quick-dry",
+        "quick dry",
+        "fast-dry",
+        "fast dry",
+        "quick drying"
+      ]
+    },
+    {
+      "dimension": "功能特性(Feature)",
+      "subcategory": null,
+      "zh": "透气",
+      "en": "Breathable",
+      "variants": [
+        "breathable",
+        "ventilated",
+        "ventilation",
+        "air-permeable"
+      ]
+    },
+    {
+      "dimension": "功能特性(Feature)",
+      "subcategory": null,
+      "zh": "吸湿排汗",
+      "en": "Moisture-Wicking",
+      "variants": [
+        "moisture-wicking",
+        "moisture wicking",
+        "sweat-wicking",
+        "sweat absorption",
+        "wicking"
+      ]
+    },
+    {
+      "dimension": "功能特性(Feature)",
+      "subcategory": null,
+      "zh": "遇水显色",
+      "en": "Water-Reactive Color",
+      "variants": [
+        "water-reactive",
+        "water activated",
+        "hydrochromic",
+        "color-changing when wet",
+        "water reactive print"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "棉",
+      "en": "Cotton",
+      "variants": [
+        "cotton"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "纯棉",
+      "en": "Pure Cotton",
+      "variants": [
+        "pure cotton",
+        "100% cotton",
+        "all cotton"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "棉混纺",
+      "en": "Cotton Blend",
+      "variants": [
+        "cotton blend",
+        "cotton blended",
+        "cotton-mixed"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "涤纶",
+      "en": "Polyester",
+      "variants": [
+        "polyester"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "聚酯纤维",
+      "en": "Polyester Fiber",
+      "variants": [
+        "polyester fiber",
+        "poly fiber",
+        "polyester filament"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "锦纶",
+      "en": "Nylon",
+      "variants": [
+        "nylon",
+        "polyamide",
+        "pa"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "常规面料",
+      "zh": "氨纶",
+      "en": "Spandex/Elastane",
+      "variants": [
+        "spandex",
+        "elastane",
+        "lycra"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "亚麻",
+      "en": "Linen",
+      "variants": [
+        "linen",
+        "flax"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "棉麻",
+      "en": "Cotton Linen",
+      "variants": [
+        "cotton linen",
+        "cotton-linen",
+        "linen cotton",
+        "cotton and linen"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "冰丝",
+      "en": "Ice Silk",
+      "variants": [
+        "ice silk",
+        "cooling silk",
+        "ice fiber",
+        "cool silk"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "速干面料",
+      "en": "Quick-Dry Fabric",
+      "variants": [
+        "quick-dry fabric",
+        "quick dry fabric",
+        "fast-dry fabric",
+        "moisture-wicking fabric"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "轻薄面料",
+      "en": "Lightweight Fabric",
+      "variants": [
+        "lightweight fabric",
+        "light fabric",
+        "thin fabric",
+        "sheer fabric"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "夏季面料",
+      "zh": "透气面料",
+      "en": "Breathable Fabric",
+      "variants": [
+        "breathable fabric",
+        "ventilated fabric",
+        "air-permeable fabric"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "抓绒",
+      "en": "Fleece",
+      "variants": [
+        "fleece",
+        "fleece fabric",
+        "fleeced"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "羊羔绒",
+      "en": "Sherpa/Lamb Fleece",
+      "variants": [
+        "sherpa",
+        "lamb fleece",
+        "sherpa fleece",
+        "faux shearling",
+        "lamb wool"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "摇粒绒",
+      "en": "Polar Fleece",
+      "variants": [
+        "polar fleece",
+        "microfleece",
+        "micro fleece",
+        "polarfleece"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "针织",
+      "en": "Knit",
+      "variants": [
+        "knit",
+        "knitted",
+        "knitting",
+        "knitwear"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "毛呢",
+      "en": "Woolen/Wool Cloth",
+      "variants": [
+        "woolen",
+        "woolen cloth",
+        "wool fabric",
+        "wool coating",
+        "melton"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "灯芯绒",
+      "en": "Corduroy",
+      "variants": [
+        "corduroy",
+        "cord",
+        "wale corduroy"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "加绒",
+      "en": "Fleece-Lined",
+      "variants": [
+        "fleece-lined",
+        "fleece lined",
+        "lined with fleece",
+        "thermal lined",
+        "brushed inside"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "秋冬面料",
+      "zh": "夹棉",
+      "en": "Padded/Quilted",
+      "variants": [
+        "padded",
+        "quilted",
+        "padded lining",
+        "cotton-padded",
+        "quilted lining"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "牛仔",
+      "en": "Denim",
+      "variants": [
+        "denim",
+        "denim fabric",
+        "jean fabric"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "帆布",
+      "en": "Canvas",
+      "variants": [
+        "canvas",
+        "canvas fabric",
+        "duck canvas"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "皮革",
+      "en": "Leather",
+      "variants": [
+        "leather",
+        "genuine leather",
+        "real leather"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "仿皮",
+      "en": "Faux Leather",
+      "variants": [
+        "faux leather",
+        "faux",
+        "pu leather",
+        "synthetic leather",
+        "vegan leather",
+        "imitation leather"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "麂皮绒",
+      "en": "Suede",
+      "variants": [
+        "suede",
+        "suede fabric",
+        "faux suede",
+        "nubuck"
+      ]
+    },
+    {
+      "dimension": "面料/材质(Material)",
+      "subcategory": "牛仔/外套",
+      "zh": "防风面料",
+      "en": "Windproof Fabric",
+      "variants": [
+        "windproof fabric",
+        "wind-resistant fabric",
+        "wind shell fabric",
+        "windbreaker fabric"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "件套数",
+      "zh": "单件",
+      "en": "1pc/Single Piece",
+      "variants": [
+        "1pc",
+        "1 pc",
+        "single piece",
+        "1 piece",
+        "one piece",
+        "single item"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "件套数",
+      "zh": "两件套",
+      "en": "2pc Set/Two-Piece",
+      "variants": [
+        "2pc",
+        "2pcs",
+        "2 pcs",
+        "2 piece",
+        "two piece",
+        "two-piece",
+        "2-pc"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "件套数",
+      "zh": "三件套",
+      "en": "3pc Set/Three-Piece",
+      "variants": [
+        "3pc",
+        "3pcs",
+        "3 pcs",
+        "3 piece",
+        "three piece",
+        "three-piece",
+        "3-pc"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "件套数",
+      "zh": "四件套",
+      "en": "4pc Set/Four-Piece",
+      "variants": [
+        "4pc",
+        "4pcs",
+        "4 pcs",
+        "4 piece",
+        "four piece",
+        "four-piece",
+        "4-pc"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "件套数",
+      "zh": "多件套",
+      "en": "Multi-Pack",
+      "variants": [
+        "multi-pack",
+        "multi pack",
+        "multipack",
+        "variety pack",
+        "bundle"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "搭配套装",
+      "zh": "T恤短裤套装",
+      "en": "T-Shirt & Shorts Set",
+      "variants": [
+        "t-shirt and shorts set",
+        "tee shorts set",
+        "t-shirt shorts set",
+        "t-shirt shorts combo"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "搭配套装",
+      "zh": "卫衣长裤套装",
+      "en": "Hoodie & Pants Set",
+      "variants": [
+        "hoodie and pants set",
+        "sweatshirt pants set",
+        "hoodie joggers set",
+        "hoodie trousers set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "搭配套装",
+      "zh": "夹克运动裤套装",
+      "en": "Jacket & Joggers Set",
+      "variants": [
+        "jacket and joggers set",
+        "jacket track pants set",
+        "jacket sweatpants set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "搭配套装",
+      "zh": "衬衫短裤套装",
+      "en": "Shirt & Shorts Set",
+      "variants": [
+        "shirt and shorts set",
+        "shirt shorts set",
+        "shirt shorts combo"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "运动套装",
+      "zh": "运动两件套",
+      "en": "Sports 2-Piece Set",
+      "variants": [
+        "sports 2-piece set",
+        "athletic two-piece set",
+        "sports 2pc set",
+        "activewear 2-piece"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "运动套装",
+      "zh": "健身套装",
+      "en": "Fitness Set/Workout Set",
+      "variants": [
+        "fitness set",
+        "workout set",
+        "gym set",
+        "training set",
+        "exercise set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "运动套装",
+      "zh": "跑步套装",
+      "en": "Running Set",
+      "variants": [
+        "running set",
+        "jogging set",
+        "track running set",
+        "runner set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "运动套装",
+      "zh": "训练套装",
+      "en": "Training Set",
+      "variants": [
+        "training set",
+        "training suit",
+        "practice set",
+        "training outfit"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "运动套装",
+      "zh": "休闲运动套装",
+      "en": "Casual Sports Set",
+      "variants": [
+        "casual sports set",
+        "casual athletic set",
+        "leisure sport set",
+        "casual activewear set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "正装套装",
+      "zh": "西装两件套",
+      "en": "Suit 2-Piece Set",
+      "variants": [
+        "suit 2-piece set",
+        "two-piece suit",
+        "2pc suit",
+        "suit and trousers set",
+        "suit and pants set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "正装套装",
+      "zh": "西装三件套",
+      "en": "Suit 3-Piece Set",
+      "variants": [
+        "suit 3-piece set",
+        "three-piece suit",
+        "3pc suit",
+        "suit vest trousers set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "正装套装",
+      "zh": "外套长裤套装",
+      "en": "Jacket & Pants Set",
+      "variants": [
+        "jacket and pants set",
+        "jacket trousers set",
+        "coat pants set",
+        "blazer pants set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "正装套装",
+      "zh": "马甲西装套装",
+      "en": "Vest & Suit Set",
+      "variants": [
+        "vest suit set",
+        "waistcoat suit set",
+        "vest and blazer set",
+        "vest and suit set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "家居套装",
+      "zh": "睡衣套装",
+      "en": "Pajama Set",
+      "variants": [
+        "pajama set",
+        "pyjama set",
+        "sleepwear set",
+        "sleep set",
+        "nightwear set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "家居套装",
+      "zh": "家居服套装",
+      "en": "Loungewear Set",
+      "variants": [
+        "loungewear set",
+        "home wear set",
+        "home wear set",
+        "lounge set",
+        "house wear set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "家居套装",
+      "zh": "睡袍套装",
+      "en": "Robe Set",
+      "variants": [
+        "robe set",
+        "bathrobe set",
+        "gown set",
+        "sleep robe set"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "多件装",
+      "zh": "2件装T恤",
+      "en": "2-Pack T-Shirt",
+      "variants": [
+        "2-pack t-shirt",
+        "2 pack tee",
+        "pack of 2 t-shirt",
+        "2 t-shirts pack",
+        "2pc t-shirt pack"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "多件装",
+      "zh": "3件装背心",
+      "en": "3-Pack Tank/Vest",
+      "variants": [
+        "3-pack tank",
+        "3 pack vest",
+        "pack of 3 tank top",
+        "3pc tank pack",
+        "3 tank tops pack"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "多件装",
+      "zh": "5双装袜子",
+      "en": "5-Pair Socks",
+      "variants": [
+        "5-pair socks",
+        "5 pair socks",
+        "pack of 5 socks",
+        "5 pairs sock pack",
+        "5pack socks"
+      ]
+    },
+    {
+      "dimension": "套装规格(Pack/Set)",
+      "subcategory": "多件装",
+      "zh": "2条装短裤",
+      "en": "2-Pack Shorts",
+      "variants": [
+        "2-pack shorts",
+        "2 pack shorts",
+        "pack of 2 shorts",
+        "2pc shorts pack",
+        "2 shorts pack"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "黑色",
+      "en": "Black",
+      "variants": [
+        "black"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "白色",
+      "en": "White",
+      "variants": [
+        "white"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "灰色",
+      "en": "Gray/Grey",
+      "variants": [
+        "gray",
+        "grey"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "深灰色",
+      "en": "Dark Gray",
+      "variants": [
+        "dark gray",
+        "dark grey",
+        "charcoal",
+        "charcoal gray",
+        "charcoal grey"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "浅灰色",
+      "en": "Light Gray",
+      "variants": [
+        "light gray",
+        "light grey",
+        "ash gray",
+        "ash grey",
+        "heather gray"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "米色",
+      "en": "Beige",
+      "variants": [
+        "beige",
+        "cream",
+        "off-white",
+        "sand"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "中性色",
+      "zh": "卡其色",
+      "en": "Khaki",
+      "variants": [
+        "khaki",
+        "khaki color",
+        "kakhi"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "蓝色系",
+      "zh": "蓝色",
+      "en": "Blue",
+      "variants": [
+        "blue"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "蓝色系",
+      "zh": "深蓝色",
+      "en": "Dark Blue/Navy",
+      "variants": [
+        "dark blue",
+        "navy",
+        "navy blue",
+        "deep blue"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "蓝色系",
+      "zh": "藏青色",
+      "en": "Navy Blue",
+      "variants": [
+        "navy",
+        "navy blue",
+        "nautical blue",
+        "marine blue",
+        "midnight blue"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "蓝色系",
+      "zh": "浅蓝色",
+      "en": "Light Blue",
+      "variants": [
+        "light blue",
+        "sky blue",
+        "baby blue",
+        "powder blue",
+        "pale blue"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "绿色系",
+      "zh": "绿色",
+      "en": "Green",
+      "variants": [
+        "green"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "绿色系",
+      "zh": "军绿色",
+      "en": "Army Green",
+      "variants": [
+        "army green",
+        "olive green",
+        "military green",
+        "olive",
+        "khaki green"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "绿色系",
+      "zh": "墨绿色",
+      "en": "Dark Green/Forest Green",
+      "variants": [
+        "dark green",
+        "forest green",
+        "emerald green",
+        "deep green",
+        "hunter green"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "棕色系",
+      "zh": "棕色",
+      "en": "Brown",
+      "variants": [
+        "brown"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "棕色系",
+      "zh": "咖色",
+      "en": "Coffee Brown",
+      "variants": [
+        "coffee",
+        "coffee brown",
+        "mocha",
+        "mocha brown",
+        "espresso"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "棕色系",
+      "zh": "驼色",
+      "en": "Camel",
+      "variants": [
+        "camel",
+        "camel color",
+        "tan",
+        "camel beige"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "黄色系",
+      "zh": "黄色",
+      "en": "Yellow",
+      "variants": [
+        "yellow"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "黄色系",
+      "zh": "姜黄色",
+      "en": "Ginger Yellow/Mustard",
+      "variants": [
+        "ginger yellow",
+        "ginger",
+        "mustard",
+        "mustard yellow",
+        "turmeric",
+        "ochre"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "红色系",
+      "zh": "红色",
+      "en": "Red",
+      "variants": [
+        "red"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "红色系",
+      "zh": "酒红色",
+      "en": "Wine Red/Burgundy",
+      "variants": [
+        "wine",
+        "wine red",
+        "burgundy",
+        "maroon",
+        "bordeaux",
+        "wine"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "红色系",
+      "zh": "橙色",
+      "en": "Orange",
+      "variants": [
+        "orange"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "红色系",
+      "zh": "砖红色",
+      "en": "Brick Red",
+      "variants": [
+        "brick red",
+        "brick",
+        "terracotta",
+        "rust red",
+        "burnt orange"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "紫色系",
+      "zh": "紫色",
+      "en": "Purple",
+      "variants": [
+        "purple",
+        "violet",
+        "lavender",
+        "plum",
+        "amethyst"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "粉色系",
+      "zh": "粉色",
+      "en": "Pink",
+      "variants": [
+        "pink",
+        "rose",
+        "rosy",
+        "blush",
+        "coral pink"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "浅色系",
+      "zh": "杏色",
+      "en": "Apricot",
+      "variants": [
+        "apricot",
+        "apricot color",
+        "peach",
+        "peachy"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "浅色系",
+      "zh": "奶油色",
+      "en": "Cream",
+      "variants": [
+        "cream",
+        "cream color",
+        "creamy",
+        "ivory",
+        "vanilla"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "亮色系",
+      "zh": "荧光色",
+      "en": "Fluorescent/Neon",
+      "variants": [
+        "fluorescent",
+        "neon",
+        "neon color",
+        "fluorescent color",
+        "glow",
+        "neon bright"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "组合色",
+      "zh": "撞色",
+      "en": "Contrast Color",
+      "variants": [
+        "contrast color",
+        "color contrast",
+        "contrasting color",
+        "contrast"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "组合色",
+      "zh": "拼色",
+      "en": "Color Patch/Spliced",
+      "variants": [
+        "color patch",
+        "spliced color",
+        "pieced color",
+        "color block",
+        "patchwork color"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "组合色",
+      "zh": "多色",
+      "en": "Multi-Color",
+      "variants": [
+        "multi-color",
+        "multicolor",
+        "multi color",
+        "colorful",
+        "multi-colored"
+      ]
+    },
+    {
+      "dimension": "颜色(Color)",
+      "subcategory": "组合色",
+      "zh": "渐变色",
+      "en": "Gradient Color",
+      "variants": [
+        "gradient",
+        "gradient color",
+        "ombre",
+        "ombre color",
+        "color gradient",
+        "fade color"
+      ]
+    }
+  ]
+}
