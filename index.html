@@ -1,305 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="跨境男装商品标题与图片优化工作台" />
-  <title>商品优化工作台</title>
-  <link rel="stylesheet" href="./style.css" />
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>麦杞岐（maggie.xie）对接服务站</title>
+<meta name="description" content="OBM2男装衬衫 / 夹克外套类目商家对接服务站"/>
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div id="toast" class="toast"></div>
-
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">P</div>
-        <div>
-          <div class="brand-name">Product AI</div>
-          <div class="brand-sub">商品优化工作台</div>
-        </div>
+<div id="app">
+  <div class="topline"><span class="dot"></span><span>OBM2 男装衬衫 / 夹克外套类目 · 商家运营工具站</span><span class="topdate" id="today"></span></div>
+  <header class="hero">
+    <div class="brand-wrap">
+      <div class="brand-mark">M</div>
+      <div><div class="brand">麦杞岐 <span>maggie.xie</span></div><div class="subtitle">OBM2男装衬衫\夹克外套类目</div></div>
+    </div>
+    <div class="hero-actions"><button class="ghost" data-go="home">首页</button><button class="primary" data-go="title">开始优化标题</button></div>
+  </header>
+  <section class="notice-shell">
+    <div class="notice-head"><div><b>运营通知</b><span>实时更新 · 点击分类快速查看</span></div><div class="notice-tabs" id="noticeTabs"></div></div>
+    <div class="notice-list" id="noticeList"></div>
+  </section>
+  <main>
+    <section id="home" class="page active">
+      <div class="section-title"><div><div class="eyebrow">SERVICE HUB</div><h1>商家对接服务站</h1><p>把类目、标题、视觉、款式参考集中到一个入口，后续可以继续增加新工具。</p></div><div class="home-badge">V1.0 · 静态版</div></div>
+      <div class="quick-grid">
+        <button class="quick-card featured" data-go="title"><span class="num">01</span><div><h3>标题优化</h3><p>按衬衫 / 外套夹克分别选词，自动按优先级组合中英标题。</p><span class="link">进入标题工具 →</span></div></button>
+        <button class="quick-card" data-go="category"><span class="num">02</span><div><h3>类目指引</h3><p>查看类目路径，复制后直接使用，减少类目选择错误。</p><span class="link">查看类目 →</span></div></button>
+        <button class="quick-card" data-go="visual"><span class="num">03</span><div><h3>视觉优化</h3><p>参考图 + AI 指令，先以衬衫视觉优化做第一版示例。</p><span class="link">查看视觉 →</span></div></button>
+        <button class="quick-card" data-go="reference"><span class="num">04</span><div><h3>需求款式参考</h3><p>都市基础风、工装 / 军事类企划参考，方便商家快速理解方向。</p><span class="link">查看参考 →</span></div></button>
+        <button class="quick-card" data-go="priority"><span class="num">05</span><div><h3>最高优先款式</h3><p>衬衫与外套夹克集合页，快速查看当前重点款式。</p><span class="link">查看重点 →</span></div></button>
       </div>
+      <div class="principles"><div><b>01</b><span>先选类目</span><small>避免路径错误</small></div><div><b>02</b><span>再做标题</span><small>关键词有序组合</small></div><div><b>03</b><span>同步视觉</span><small>图片与人群匹配</small></div><div><b>04</b><span>参考款式</span><small>快速跟进方向</small></div></div>
+    </section>
 
-      <nav class="nav" id="sidebarNav">
-        <button class="nav-item active" data-page="home">
-          <span class="nav-icon">⌂</span><span>工作台</span>
-        </button>
-        <button class="nav-item" data-page="title">
-          <span class="nav-icon">T</span><span>标题优化</span>
-        </button>
-        <button class="nav-item" data-page="analyze">
-          <span class="nav-icon">✓</span><span>标题诊断</span>
-        </button>
-        <button class="nav-item" data-page="keywords">
-          <span class="nav-icon">#</span><span>关键词库</span>
-        </button>
-        <button class="nav-item" data-page="image">
-          <span class="nav-icon">▧</span><span>图片优化</span><span class="nav-badge">即将</span>
-        </button>
-      </nav>
+    <section id="category" class="page"><div class="section-title"><div><div class="eyebrow">01 / CATEGORY</div><h2>类目指引</h2><p>根据你提供的类目指引整理，商家可以查看图片，也可以复制文字路径。</p></div></div>
+      <div class="category-layout"><div class="image-card"><img src="assets/category/category-guide.png" alt="类目指引"/><div class="image-note">原始类目指引 · 仅作运营参考</div></div><div class="path-panel"><div class="filter-row"><button class="filter active" data-cat="全部">全部</button><button class="filter" data-cat="衬衫">衬衫</button><button class="filter" data-cat="外套夹克">外套夹克</button><button class="filter" data-cat="户外套装">户外套装</button></div><div id="categoryList"></div></div></div>
+    </section>
 
-      <div class="sidebar-bottom">
-        <div class="mini-tip">
-          <div class="mini-tip-title">V1 已上线</div>
-          <div class="mini-tip-text">衬衫 / 夹克标题优化</div>
-        </div>
-        <div class="version">Product Optimizer · V1.0</div>
-      </div>
-    </aside>
+    <section id="title" class="page"><div class="section-title"><div><div class="eyebrow">02 / TITLE OPTIMIZER</div><h2>标题优化</h2><p>选择商品类型 → 按维度选词 → 组合中英文标题。生成结果<strong>不可以直接使用，请检查后使用。</strong></p></div></div>
+      <div class="title-layout"><div class="builder-card"><div class="switch"><button class="product-tab active" data-product="shirt">衬衫 <small>Shirt</small></button><button class="product-tab" data-product="jacket">外套夹克 <small>Jacket / Outerwear</small></button></div><div class="platform-row"><span>平台参考</span><button class="platform active">通用</button><button class="platform">Amazon</button><button class="platform">SHEIN</button><button class="platform">Temu</button></div><div id="dimensionForm"></div></div><div class="result-card"><div class="result-head"><div><span class="eyebrow">LIVE RESULT</span><h3>标题预览</h3></div><span class="score" id="score">0 / 100</span></div><div class="warning">⚠ 生成标题不可以直接使用，请检查后使用。请确认商品属性、平台要求、品牌词及敏感词。</div><label>中文标题</label><div class="title-output" id="zhOutput">请选择词语</div><button class="copy-btn" data-copy="zhOutput">复制中文标题</button><label>English Title</label><div class="title-output en" id="enOutput">Select keywords</div><button class="copy-btn" data-copy="enOutput">复制英文标题</button><div class="coverage" id="coverage"></div></div></div>
+    </section>
 
-    <main class="main">
-      <header class="topbar">
-        <div>
-          <div class="breadcrumb">商品优化工作台 <span>/</span> <strong id="pageTitle">工作台</strong></div>
-        </div>
-        <div class="top-actions">
-          <div class="status-dot"><i></i> 本地数据已加载</div>
-          <button class="avatar" title="当前账号">M</button>
-        </div>
-      </header>
+    <section id="visual" class="page"><div class="section-title"><div><div class="eyebrow">03 / VISUAL OPTIMIZER</div><h2>视觉优化</h2><p>先用衬衫做第一版：参考图 + AI 指令 + 执行检查。</p></div></div><div class="visual-grid"><div class="image-card"><img src="assets/visual/shirt-visual-example.png" alt="衬衫视觉优化示例"/><div class="image-note">示例：衬衫视觉优化</div></div><div class="prompt-card"><div class="tag">衬衫 · AI 改图指令</div><h3>保留商品，升级表达</h3><p id="visualPrompt"></p><button class="primary full" data-copy="visualPrompt">复制 AI 指令</button><div class="checklist" id="visualChecklist"></div></div></div></section>
 
-      <!-- HOME -->
-      <section class="page active" id="page-home">
-        <div class="hero">
-          <div class="hero-copy">
-            <div class="eyebrow">CROSS-BORDER PRODUCT OPTIMIZER</div>
-            <h1>让商品标题，<br><em>更清晰、更专业、更好用。</em></h1>
-            <p>围绕衬衫与夹克外套，基于你的词库和标题组合优先级，快速完成商品标题生成与诊断。</p>
-            <div class="hero-actions">
-              <button class="btn btn-primary btn-lg" data-go="title">开始优化商品 <span>→</span></button>
-              <button class="btn btn-secondary btn-lg" data-go="keywords">查看关键词库</button>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="visual-card visual-card-main">
-              <div class="visual-top">
-                <span>TITLE SCORE</span>
-                <b>92</b>
-              </div>
-              <div class="score-ring"><span>92</span></div>
-              <div class="visual-line"></div>
-              <div class="visual-tags">
-                <span>Category ✓</span><span>Pattern ✓</span><span>Occasion ✓</span>
-              </div>
-            </div>
-            <div class="floating-card fc-one"><b>319</b><span>词库条目</span></div>
-            <div class="floating-card fc-two"><b>2</b><span>核心类目</span></div>
-          </div>
-        </div>
+    <section id="reference" class="page"><div class="section-title"><div><div class="eyebrow">04 / STYLE REFERENCE</div><h2>需求款式参考</h2><p>以夹克外套为例，先开放都市基础风、工装 / 军事类两个方向。</p></div></div><div class="pdf-grid"><div class="pdf-card"><div class="pdf-title"><b>都市基础风</b><span>12页</span></div><iframe src="assets/reference/jacket-urban-basic.pdf"></iframe><a href="assets/reference/jacket-urban-basic.pdf" target="_blank">打开完整 PDF →</a></div><div class="pdf-card"><div class="pdf-title"><b>工装 / 军事类</b><span>12页</span></div><iframe src="assets/reference/jacket-workwear-military.pdf"></iframe><a href="assets/reference/jacket-workwear-military.pdf" target="_blank">打开完整 PDF →</a></div></div></section>
 
-        <div class="section-head">
-          <div>
-            <h2>核心工具</h2>
-            <p>从标题开始，逐步扩展到完整商品内容优化。</p>
-          </div>
-        </div>
-
-        <div class="feature-grid">
-          <button class="feature-card featured" data-go="title">
-            <div class="feature-icon orange">T</div>
-            <div class="feature-body">
-              <div class="feature-title">标题优化 <span class="live">已上线</span></div>
-              <p>按品类、图案、领型、场景等优先级生成英文商品标题。</p>
-              <div class="feature-link">立即使用 →</div>
-            </div>
-          </button>
-
-          <button class="feature-card" data-go="image">
-            <div class="feature-icon purple">▧</div>
-            <div class="feature-body">
-              <div class="feature-title">图片优化 <span class="soon">即将上线</span></div>
-              <p>AI换背景、场景图、模特图与商品视觉本地化。</p>
-              <div class="feature-link muted">查看规划 →</div>
-            </div>
-          </button>
-
-          <button class="feature-card" data-go="keywords">
-            <div class="feature-icon blue">#</div>
-            <div class="feature-body">
-              <div class="feature-title">关键词库 <span class="live">已上线</span></div>
-              <p>查看 Excel 转换后的 319 条中英词库，并按维度筛选。</p>
-              <div class="feature-link">进入词库 →</div>
-            </div>
-          </button>
-
-          <button class="feature-card" data-go="analyze">
-            <div class="feature-icon green">✓</div>
-            <div class="feature-body">
-              <div class="feature-title">标题诊断 <span class="live">已上线</span></div>
-              <p>检测标题长度、维度覆盖、关键词重复和信息完整度。</p>
-              <div class="feature-link">开始诊断 →</div>
-            </div>
-          </button>
-        </div>
-
-        <div class="recent-card">
-          <div class="section-head compact">
-            <div><h2>最近优化</h2><p>保存在当前浏览器中的历史记录。</p></div>
-            <button class="text-btn" id="clearHistory">清空记录</button>
-          </div>
-          <div id="recentList" class="recent-list"></div>
-        </div>
-      </section>
-
-      <!-- TITLE -->
-      <section class="page" id="page-title">
-        <div class="page-intro">
-          <div>
-            <div class="eyebrow">TITLE OPTIMIZER</div>
-            <h1>标题优化</h1>
-            <p>先确定商品属性，再按照你的优先级规则组合标题。AI润色接口可在后续接入。</p>
-          </div>
-          <div class="platform-switch" id="platformSwitch">
-            <button class="platform active" data-platform="generic">通用</button>
-            <button class="platform" data-platform="amazon">Amazon</button>
-            <button class="platform" data-platform="shein">SHEIN</button>
-            <button class="platform" data-platform="temu">Temu</button>
-          </div>
-        </div>
-
-        <div class="optimizer-layout">
-          <div class="panel form-panel">
-            <div class="panel-title">
-              <div><span class="step">01</span><div><h2>选择商品</h2><p>先选择需要优化的核心类目</p></div></div>
-            </div>
-
-            <div class="category-switch" id="categorySwitch">
-              <button class="category-card active" data-category="shirt">
-                <span class="cat-icon">S</span>
-                <span><b>衬衫</b><small>Shirt</small></span>
-              </button>
-              <button class="category-card" data-category="jacket">
-                <span class="cat-icon">J</span>
-                <span><b>夹克外套</b><small>Jacket</small></span>
-              </button>
-            </div>
-
-            <div class="form-divider"></div>
-
-            <div class="panel-title small">
-              <div><span class="step">02</span><div><h2>填写商品属性</h2><p>只选择真实存在于商品上的属性</p></div></div>
-            </div>
-
-            <div id="attributeFields" class="attribute-grid"></div>
-
-            <div class="panel-title small prompt-title">
-              <div><span class="step">03</span><div><h2>补充商品信息</h2><p>用于让标题更准确，不会自动虚构属性</p></div></div>
-            </div>
-            <textarea id="productNotes" class="notes" placeholder="例如：男士秋季休闲夹克，黑色，拉链开合，适合日常通勤。"></textarea>
-
-            <div class="form-actions">
-              <button class="btn btn-primary btn-lg full" id="generateTitle">生成标题 <span>→</span></button>
-              <button class="btn btn-ghost full" id="resetTitle">重置属性</button>
-            </div>
-          </div>
-
-          <div class="panel result-panel">
-            <div class="panel-title result-head">
-              <div><span class="step">04</span><div><h2>标题结果</h2><p id="resultHint">填写左侧属性后生成</p></div></div>
-              <div class="result-score"><span>健康度</span><b id="scoreValue">—</b></div>
-            </div>
-
-            <div id="titleResults" class="title-results empty-state">
-              <div class="empty-icon">T</div>
-              <h3>等待生成</h3>
-              <p>选择商品属性后，点击「生成标题」。</p>
-            </div>
-
-            <div id="structureBox" class="structure-box hidden">
-              <div class="subhead">标题结构</div>
-              <div id="structureTags" class="tag-row"></div>
-            </div>
-
-            <div class="rules-box">
-              <div class="subhead">当前组合规则</div>
-              <div id="currentRule" class="rule-flow"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ANALYZE -->
-      <section class="page" id="page-analyze">
-        <div class="page-intro">
-          <div>
-            <div class="eyebrow">TITLE DIAGNOSTIC</div>
-            <h1>标题诊断</h1>
-            <p>把现有标题粘贴进来，快速判断信息维度是否完整。</p>
-          </div>
-        </div>
-
-        <div class="analyze-layout">
-          <div class="panel">
-            <div class="panel-title"><div><span class="step">01</span><div><h2>输入原始标题</h2><p>建议使用英文商品标题</p></div></div></div>
-            <textarea id="analyzeInput" class="analyze-input" placeholder="例如：Men's Striped Casual Shirt Long Sleeve Button Down Cotton Blue"></textarea>
-            <div class="analyze-actions">
-              <button class="btn btn-primary btn-lg" id="runAnalyze">开始诊断</button>
-              <button class="btn btn-ghost" id="useDemoTitle">使用示例</button>
-            </div>
-          </div>
-
-          <div class="panel diagnostic-panel">
-            <div class="panel-title"><div><span class="step">02</span><div><h2>诊断结果</h2><p>基于当前词库与规则</p></div></div></div>
-            <div id="diagnosticEmpty" class="empty-state small-empty">
-              <div class="empty-icon">✓</div><h3>等待诊断</h3><p>输入标题后点击开始诊断。</p>
-            </div>
-            <div id="diagnosticResult" class="hidden"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- KEYWORDS -->
-      <section class="page" id="page-keywords">
-        <div class="page-intro">
-          <div>
-            <div class="eyebrow">KEYWORD LIBRARY</div>
-            <h1>关键词库</h1>
-            <p>来自你上传的 Excel，当前共 <strong id="keywordCount">319</strong> 条词条。</p>
-          </div>
-        </div>
-
-        <div class="panel keyword-panel">
-          <div class="keyword-toolbar">
-            <div class="search-wrap"><span>⌕</span><input id="keywordSearch" placeholder="搜索中文 / 英文关键词..." /></div>
-            <select id="dimensionFilter"><option value="">全部维度</option></select>
-            <select id="categoryKeywordFilter">
-              <option value="">全部类目</option>
-              <option value="shirt">衬衫</option>
-              <option value="jacket">夹克外套</option>
-            </select>
-          </div>
-          <div class="keyword-summary">
-            <span id="keywordResultCount">—</span> 条结果
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>维度</th><th>中文</th><th>标准英文</th><th>英文变体</th></tr></thead>
-              <tbody id="keywordTable"></tbody>
-            </table>
-          </div>
-          <div class="pagination" id="keywordPagination"></div>
-        </div>
-      </section>
-
-      <!-- IMAGE -->
-      <section class="page" id="page-image">
-        <div class="coming-page">
-          <div class="coming-icon">▧</div>
-          <div class="eyebrow">IMAGE OPTIMIZER</div>
-          <h1>图片优化</h1>
-          <p>第二阶段功能正在规划中。</p>
-          <div class="coming-grid">
-            <div><b>01</b><strong>AI换背景</strong><span>统一商品视觉风格</span></div>
-            <div><b>02</b><strong>场景图</strong><span>根据目标市场生成场景</span></div>
-            <div><b>03</b><strong>模特图</strong><span>商品视觉本地化</span></div>
-            <div><b>04</b><strong>轮播图</strong><span>主图与细节图组合</span></div>
-          </div>
-          <button class="btn btn-secondary" data-go="home">返回工作台</button>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+    <section id="priority" class="page"><div class="section-title"><div><div class="eyebrow">05 / PRIORITY STYLES</div><h2>最高优先款式</h2><p>把当前重点款式做成集合入口，商家可以直接浏览。</p></div></div><div class="priority-tabs"><button class="priority-tab active" data-priority="shirt">衬衫</button><button class="priority-tab" data-priority="jacket">外套夹克</button></div><div id="priorityContent" class="priority-content"></div></section>
+  </main>
+  <footer><b>麦杞岐（maggie.xie）对接服务站</b><span>OBM2男装衬衫\夹克外套类目 · V1.0</span><span>静态版数据均来自运营文件，可继续扩展。</span></footer>
+</div>
+<script src="script.js"></script>
+</body></html>
