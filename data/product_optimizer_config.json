@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "跨境男装商品优化工作台",
+    "description": "面向商家的标题与图片优化工具，V1优先支持衬衫和夹克外套。",
+    "frontend_entry": "/",
+    "first_module": "/title",
+    "future_modules": [
+      "/image",
+      "/description",
+      "/keywords",
+      "/analytics"
+    ]
+  },
+  "data_files": {
+    "keywords": "data/keyword_library.json",
+    "title_rules": "data/title_rules.json",
+    "image_rules": "data/image_rules.json"
+  },
+  "category_focus": [
+    "shirt",
+    "jacket"
+  ],
+  "home_panels": [
+    {
+      "id": "title",
+      "name": "标题优化",
+      "route": "/title",
+      "status": "active",
+      "priority": 1
+    },
+    {
+      "id": "image",
+      "name": "图片优化",
+      "route": "/image",
+      "status": "coming_soon",
+      "priority": 2
+    },
+    {
+      "id": "keywords",
+      "name": "关键词库",
+      "route": "/keywords",
+      "status": "coming_soon",
+      "priority": 3
+    },
+    {
+      "id": "analytics",
+      "name": "标题诊断",
+      "route": "/title/analyze",
+      "status": "active",
+      "priority": 4
+    }
+  ]
+}
