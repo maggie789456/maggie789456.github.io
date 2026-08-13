@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "note": "新增图片时上传图片后，在此文件新增一条记录；页面按 addedAt 从新到旧排序，同日按 sort 从大到小排序。",
+  "items": [
+    {
+      "id": "shirt-000",
+      "category": "shirt",
+      "title": "衬衫重点款式 1",
+      "image": "assets/priority/shirt/item-000.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 10
+    },
+    {
+      "id": "shirt-001",
+      "category": "shirt",
+      "title": "衬衫重点款式 2",
+      "image": "assets/priority/shirt/item-001.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 9
+    },
+    {
+      "id": "shirt-002",
+      "category": "shirt",
+      "title": "衬衫重点款式 3",
+      "image": "assets/priority/shirt/item-002.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 8
+    },
+    {
+      "id": "shirt-003",
+      "category": "shirt",
+      "title": "衬衫重点款式 4",
+      "image": "assets/priority/shirt/item-003.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 7
+    },
+    {
+      "id": "shirt-004",
+      "category": "shirt",
+      "title": "衬衫重点款式 5",
+      "image": "assets/priority/shirt/item-004.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 6
+    },
+    {
+      "id": "shirt-005",
+      "category": "shirt",
+      "title": "衬衫重点款式 6",
+      "image": "assets/priority/shirt/item-005.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 5
+    },
+    {
+      "id": "shirt-006",
+      "category": "shirt",
+      "title": "衬衫重点款式 7",
+      "image": "assets/priority/shirt/item-006.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 4
+    },
+    {
+      "id": "shirt-007",
+      "category": "shirt",
+      "title": "衬衫重点款式 8",
+      "image": "assets/priority/shirt/item-007.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 3
+    },
+    {
+      "id": "shirt-008",
+      "category": "shirt",
+      "title": "衬衫重点款式 9",
+      "image": "assets/priority/shirt/item-008.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 2
+    },
+    {
+      "id": "shirt-009",
+      "category": "shirt",
+      "title": "衬衫重点款式 10",
+      "image": "assets/priority/shirt/item-009.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 1
+    },
+    {
+      "id": "jacket-000",
+      "category": "jacket",
+      "title": "夹克外套重点款式 1",
+      "image": "assets/priority/jacket/item-000.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 10
+    },
+    {
+      "id": "jacket-001",
+      "category": "jacket",
+      "title": "夹克外套重点款式 2",
+      "image": "assets/priority/jacket/item-001.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 9
+    },
+    {
+      "id": "jacket-002",
+      "category": "jacket",
+      "title": "夹克外套重点款式 3",
+      "image": "assets/priority/jacket/item-002.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 8
+    },
+    {
+      "id": "jacket-003",
+      "category": "jacket",
+      "title": "夹克外套重点款式 4",
+      "image": "assets/priority/jacket/item-003.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 7
+    },
+    {
+      "id": "jacket-004",
+      "category": "jacket",
+      "title": "夹克外套重点款式 5",
+      "image": "assets/priority/jacket/item-004.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 6
+    },
+    {
+      "id": "jacket-005",
+      "category": "jacket",
+      "title": "夹克外套重点款式 6",
+      "image": "assets/priority/jacket/item-005.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 5
+    },
+    {
+      "id": "jacket-006",
+      "category": "jacket",
+      "title": "夹克外套重点款式 7",
+      "image": "assets/priority/jacket/item-006.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 4
+    },
+    {
+      "id": "jacket-007",
+      "category": "jacket",
+      "title": "夹克外套重点款式 8",
+      "image": "assets/priority/jacket/item-007.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 3
+    },
+    {
+      "id": "jacket-008",
+      "category": "jacket",
+      "title": "夹克外套重点款式 9",
+      "image": "assets/priority/jacket/item-008.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 2
+    },
+    {
+      "id": "jacket-009",
+      "category": "jacket",
+      "title": "夹克外套重点款式 10",
+      "image": "assets/priority/jacket/item-009.jpg",
+      "addedAt": "2026-08-13",
+      "sort": 1
+    }
+  ]
+}
