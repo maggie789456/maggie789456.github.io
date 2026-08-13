@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>最高优先款式 · 麦杞岐对接服务站</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#18212b;font-family:Inter,"Microsoft YaHei","PingFang SC",Arial,sans-serif}.top{background:#151a2a;color:#fff;padding:26px 6vw}.top small{color:#ff8c70;letter-spacing:2px;font-weight:900}.top h1{margin:8px 0;font-size:34px}.top p{margin:0;color:#cbd1dc}.wrap{max-width:1400px;margin:26px auto;padding:0 22px}.tabs{display:flex;gap:10px;margin-bottom:18px}.tab{border:0;background:#e8ebef;border-radius:10px;padding:11px 18px;font-weight:900;color:#606a76}.tab.active{background:#151a2a;color:#fff}.section{background:#fff;border:1px solid #e0e4e8;border-radius:14px;padding:18px;margin-bottom:24px}.section h2{margin:0 0 4px;font-size:23px}.section p{margin:0 0 16px;color:#77808b;font-size:13px}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}.item{border:1px solid #e1e5e9;background:#f8f9fa;border-radius:11px;padding:0;overflow:hidden;cursor:pointer;text-align:left}.item img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.item span{display:block;padding:10px 11px;font-size:12px;color:#5f6975}.back{display:inline-block;margin-top:18px;color:#ff633b;font-weight:900;font-size:13px}.lb{display:none;position:fixed;inset:0;z-index:20}.lb.show{display:block}.shade{position:absolute;inset:0;background:rgba(0,0,0,.8)}.lb img{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:90vw;max-height:90vh;border-radius:10px;background:#fff}.close{position:absolute;right:22px;top:16px;z-index:2;width:44px;height:44px;border:0;border-radius:50%;font-size:28px;background:#fff}@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}.top h1{font-size:27px}}
+</style></head>
+<body>
+<header class="top"><small>05 / PRIORITY</small><h1>最高优先款式 · 图片集合页</h1><p>麦杞岐（maggie.xie）对接服务站 · 商家快速浏览重点款式方向</p></header>
+<main class="wrap"><div class="tabs"><button class="tab active" data-tab="shirt">衬衫</button><button class="tab" data-tab="jacket">夹克外套</button></div><section id="shirt" class="section"><h2>衬衫重点款式</h2><p>10 张参考图 · 点击任意图片可放大查看</p><div class="grid" id="shirtGrid"></div></section><section id="jacket" class="section"><h2>夹克外套重点款式</h2><p>10 张参考图 · 点击任意图片可放大查看</p><div class="grid" id="jacketGrid"></div></section><a class="back" href="index.html">← 返回对接服务站</a></main>
+<div class="lb" id="lb"><div class="shade"></div><button class="close">×</button><img id="lbImg" alt="大图预览"></div>
+<script>
+const make=(id,kind,label)=>{const g=document.getElementById(id);for(let i=0;i<10;i++){const b=document.createElement('button');b.className='item';const src=`assets/priority/${kind}/item-${String(i).padStart(3,'0')}.jpg`;b.innerHTML=`<img src="${src}" alt="${label}重点款式 ${i+1}"><span>${label} · 重点款式 ${i+1}</span>`;b.onclick=()=>open(src);g.appendChild(b)}};
+make('shirtGrid','shirt','衬衫');make('jacketGrid','jacket','夹克外套');
+function open(src){document.getElementById('lbImg').src=src;document.getElementById('lb').classList.add('show')};function close(){document.getElementById('lb').classList.remove('show')};document.querySelector('.close').onclick=close;document.querySelector('.shade').onclick=close;
+const hash=location.hash.replace('#','');if(hash==='shirt'||hash==='jacket'){document.getElementById(hash).scrollIntoView({behavior:'smooth'});document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===hash))}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.getElementById(t.dataset.tab).scrollIntoView({behavior:'smooth'});document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t))});
+</script></body></html>
