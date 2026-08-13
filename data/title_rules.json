@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "rules": {
+    "shirt": {
+      "name": "衬衫",
+      "nameEn": "Shirt",
+      "platformNote": "Amazon / SHEIN / Temu 参考：优先商品核心词与可验证属性，避免中文营销词堆砌。",
+      "order": [
+        "target",
+        "category",
+        "pattern",
+        "neckline",
+        "occasion",
+        "sleeve",
+        "style",
+        "material",
+        "closure",
+        "color"
+      ],
+      "required": [
+        "category",
+        "pattern",
+        "neckline"
+      ],
+      "high": [
+        "occasion",
+        "sleeve",
+        "style"
+      ],
+      "extra": [
+        "material",
+        "closure",
+        "color"
+      ]
+    },
+    "jacket": {
+      "name": "外套夹克",
+      "nameEn": "Jacket / Outerwear",
+      "platformNote": "跨平台参考：品类词优先，其次场景与风格，再补领型/版型/闭合方式和材质颜色。",
+      "order": [
+        "target",
+        "category",
+        "occasion",
+        "style",
+        "neckline",
+        "fit",
+        "closure",
+        "material",
+        "color"
+      ],
+      "required": [
+        "category",
+        "occasion",
+        "style"
+      ],
+      "high": [
+        "neckline",
+        "fit",
+        "closure"
+      ],
+      "extra": [
+        "material",
+        "color"
+      ]
+    }
+  },
+  "disclaimer": "生成标题不可以直接使用，请检查后使用。"
+}
