@@ -16,7 +16,7 @@
     </button>
     <div class="side-caption">功能导航</div>
     <nav class="side-nav">
-      <button class="nav-item active" data-go="home"><span>⌂</span><b>首页</b></button>
+      <button class="nav-item home-item active" data-go="home"><span>⌂</span><b>首页</b></button>
       <button class="nav-item" data-go="category"><i>01</i><b>类目指引</b></button>
       <button class="nav-item" data-go="title"><i>02</i><b>标题优化</b></button>
       <button class="nav-item" data-go="visual"><i>03</i><b>视觉优化</b></button>
@@ -32,36 +32,45 @@
       <span id="today"></span>
     </header>
 
-    <section class="notice-shell">
-      <div class="notice-title"><div><strong>运营通知</strong><small>热搜词 · 备货相关 · 提报 · 其他</small></div><div id="noticeTabs" class="notice-tabs"></div></div>
-      <div id="noticeList" class="notice-list"></div>
+    <section class="notice-strip" aria-label="运营通知">
+      <div class="notice-row hot-row"><span class="notice-icon">🔥</span><b>热搜词</b><span id="hotNotice"></span><time id="hotDate"></time></div>
+      <div class="notice-row update-row"><span class="notice-icon">📣</span><b>近期通知</b><span id="updateNotice"></span><time id="updateDate"></time></div>
     </section>
 
     <main>
       <section id="home" class="page active">
-        <div class="page-head hero-head"><div><div class="eyebrow">SERVICE HUB</div><h1>麦杞岐（maggie.xie）对接服务站</h1><p>OBM2男装衬衫 / 夹克外套类目 · 商家运营工具入口</p></div><button class="primary" data-go="title">开始标题优化 →</button></div>
+        <div class="page-head hero-head">
+          <div><div class="eyebrow">SERVICE HUB</div><h1>麦杞岐（maggie.xie）对接服务站</h1><p>OBM2男装衬衫 / 夹克外套类目 · 商家运营工具入口</p></div>
+          <button class="primary" data-go="category">从类目指引开始 →</button>
+        </div>
         <div class="quick-grid">
-          <button class="quick-card featured" data-go="title"><span class="card-num">02</span><h3>标题优化</h3><p>衬衫 / 外套夹克，按维度选择词语，自动组合中英文标题。</p><span>进入工具 →</span></button>
-          <button class="quick-card" data-go="category"><span class="card-num">01</span><h3>类目指引</h3><p>上方直接复制类目路径，下方查看完整类目图。</p><span>查看类目 →</span></button>
-          <button class="quick-card" data-go="visual"><span class="card-num">03</span><h3>视觉优化</h3><p>参考图片 + AI 指令，帮助商家快速完成视觉调整。</p><span>查看视觉 →</span></button>
-          <button class="quick-card" data-go="reference"><span class="card-num">04</span><h3>需求款式参考</h3><p>都市基础风、工装 / 军事类方向参考。</p><span>查看参考 →</span></button>
-          <button class="quick-card" data-go="priority"><span class="card-num">05</span><h3>最高优先款式</h3><p>衬衫与外套夹克重点款式集合。</p><span>查看重点 →</span></button>
+          <button class="quick-card featured" data-go="category"><span class="card-num">01</span><h3>类目指引</h3><p>先确认类目路径，上方一键复制，下方查看完整类目图。</p><span>查看类目 →</span></button>
+          <button class="quick-card" data-go="title"><span class="card-num">02</span><h3>标题优化</h3><p>衬衫 / 外套夹克分开选择维度，自动组合中英文标题。</p><span>进入工具 →</span></button>
+          <button class="quick-card" data-go="visual"><span class="card-num">03</span><h3>视觉优化</h3><p>按衬衫 / 外套夹克查看参考图和 AI 改图指令。</p><span>查看视觉 →</span></button>
+          <button class="quick-card" data-go="reference"><span class="card-num">04</span><h3>需求款式参考</h3><p>按品类查看款式企划方向，改为上下纵向浏览。</p><span>查看参考 →</span></button>
+          <button class="quick-card" data-go="priority"><span class="card-num">05</span><h3>最高优先款式</h3><p>进入图片集合页，点击单张图片放大查看。</p><span>查看重点 →</span></button>
         </div>
       </section>
 
       <section id="category" class="page">
-        <div class="page-head"><div><div class="eyebrow">01 / CATEGORY</div><h2>类目指引</h2><p>先复制商家需要的类目路径，再向下查看完整类目图。</p></div></div>
-        <div class="category-filter" id="categoryFilters"></div>
+        <div class="page-head"><div><div class="eyebrow">01 / CATEGORY</div><h2>类目指引</h2><p>第一步先确认商品所属大类；上方复制类目路径，下方查看完整类目图。</p></div></div>
+        <div class="major-tabs" data-group="category">
+          <button class="major-tab active" data-value="衬衫">衬衫</button>
+          <button class="major-tab" data-value="外套夹克">夹克外套</button>
+        </div>
         <div id="categoryList" class="category-list"></div>
-        <div class="category-image-card"><div class="subhead"><div><b>类目指引图</b><span>原始类目图 · 仅作运营参考</span></div></div><img src="assets/category/category-guide.png" alt="类目指引图"></div>
+        <div class="category-image-card"><div class="subhead"><div><b>完整类目指引图</b><span>下方为原始类目图 · 仅作运营参考</span></div></div><img src="assets/category/category-guide.png" alt="类目指引图"></div>
       </section>
 
       <section id="title" class="page">
-        <div class="page-head"><div><div class="eyebrow">02 / TITLE</div><h2>标题优化</h2><p>选择商品类型 → 按维度选词 → 自动组合中英文标题。<strong>生成标题不可以直接使用，请检查后使用。</strong></p></div></div>
+        <div class="page-head"><div><div class="eyebrow">02 / TITLE</div><h2>标题优化</h2><p>先选择商品大类，再按维度选词并自动组合。<strong>生成标题不可以直接使用，请检查后使用。</strong></p></div></div>
+        <div class="major-tabs" data-group="title">
+          <button class="major-tab active" data-value="shirt">衬衫 <small>Shirt</small></button>
+          <button class="major-tab" data-value="jacket">夹克外套 <small>Jacket / Outerwear</small></button>
+        </div>
         <div class="title-layout">
           <div class="builder-card">
-            <div class="switch"><button class="product-tab active" data-product="shirt">衬衫 <small>Shirt</small></button><button class="product-tab" data-product="jacket">外套夹克 <small>Jacket / Outerwear</small></button></div>
-            <div class="rule-note">组合原则：先完成必选维度，再补充高优维度，最后按实际商品情况扩展属性。</div>
+            <div class="rule-note" id="titleRuleNote"></div>
             <div id="dimensionForm"></div>
           </div>
           <div class="result-card">
@@ -75,23 +84,34 @@
       </section>
 
       <section id="visual" class="page">
-        <div class="page-head"><div><div class="eyebrow">03 / VISUAL</div><h2>视觉优化</h2><p>参考图片 + AI 指令，先以衬衫做第一版。</p></div></div>
-        <div class="visual-grid"><div class="image-card"><img src="assets/visual/shirt-visual-example.png" alt="衬衫视觉优化示例"><div class="image-note">衬衫视觉优化示例</div></div><div class="prompt-card"><div class="tag">衬衫 · AI 改图指令</div><h3>保留商品，升级表达</h3><p id="visualPrompt"></p><button class="primary full" data-copy="visualPrompt">复制 AI 指令</button><div class="checklist" id="visualChecklist"></div></div></div>
+        <div class="page-head"><div><div class="eyebrow">03 / VISUAL</div><h2>视觉优化</h2><p>按商品大类进入对应视觉参考；目前先完成衬衫示例。</p></div></div>
+        <div class="major-tabs" data-group="visual">
+          <button class="major-tab active" data-value="shirt">衬衫</button>
+          <button class="major-tab" data-value="jacket">夹克外套</button>
+        </div>
+        <div id="visualContent"></div>
       </section>
 
       <section id="reference" class="page">
-        <div class="page-head"><div><div class="eyebrow">04 / REFERENCE</div><h2>需求款式参考</h2><p>以夹克外套为例，查看都市基础风、工装 / 军事类方向。</p></div></div>
-        <div class="pdf-grid"><div class="pdf-card"><div class="pdf-title"><b>都市基础风</b><span>款式参考</span></div><iframe src="assets/reference/jacket-urban-basic.pdf"></iframe><a href="assets/reference/jacket-urban-basic.pdf" target="_blank">打开完整 PDF →</a></div><div class="pdf-card"><div class="pdf-title"><b>工装 / 军事类</b><span>款式参考</span></div><iframe src="assets/reference/jacket-workwear-military.pdf"></iframe><a href="assets/reference/jacket-workwear-military.pdf" target="_blank">打开完整 PDF →</a></div></div>
+        <div class="page-head"><div><div class="eyebrow">04 / REFERENCE</div><h2>需求款式参考</h2><p>按商品大类纵向浏览，避免左右并排过小；点击可打开完整 PDF。</p></div></div>
+        <div class="major-tabs" data-group="reference">
+          <button class="major-tab active" data-value="shirt">衬衫</button>
+          <button class="major-tab" data-value="jacket">夹克外套</button>
+        </div>
+        <div id="referenceContent"></div>
       </section>
 
       <section id="priority" class="page">
-        <div class="page-head"><div><div class="eyebrow">05 / PRIORITY</div><h2>最高优先款式</h2><p>衬衫与外套夹克重点款式集合，快速查看当前方向。</p></div></div>
-        <div class="priority-tabs"><button class="priority-tab active" data-priority="shirt">衬衫</button><button class="priority-tab" data-priority="jacket">外套夹克</button></div>
-        <div id="priorityContent" class="priority-content"></div>
+        <div class="page-head"><div><div class="eyebrow">05 / PRIORITY</div><h2>最高优先款式</h2><p>图片集合页：点击任意图片即可放大查看，适合商家快速浏览重点方向。</p></div><a class="primary link-button" href="priority.html">进入图片集合页 →</a></div>
+        <div class="priority-entry-grid">
+          <button class="priority-entry active" data-priority-link="shirt"><span>01</span><b>衬衫重点款式</b><small>10 张参考图 · 点击进入集合页</small></button>
+          <button class="priority-entry" data-priority-link="jacket"><span>02</span><b>夹克外套重点款式</b><small>10 张参考图 · 点击进入集合页</small></button>
+        </div>
+        <div class="priority-preview" id="priorityPreview"></div>
       </section>
     </main>
 
-    <footer><b>麦杞岐（maggie.xie）对接服务站</b><span>OBM2男装衬衫 / 夹克外套类目</span><span>内容持续更新 · V1.1</span></footer>
+    <footer><b>麦杞岐（maggie.xie）对接服务站</b><span>OBM2男装衬衫 / 夹克外套类目</span><span>内容持续更新 · V1.2</span></footer>
   </div>
 </div>
 <script src="script.js"></script>
