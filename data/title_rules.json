@@ -1,10 +1,9 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "rules": {
     "shirt": {
       "name": "衬衫",
       "nameEn": "Shirt",
-      "platformNote": "Amazon / SHEIN / Temu 参考：优先商品核心词与可验证属性，避免中文营销词堆砌。",
       "order": [
         "target",
         "category",
@@ -31,12 +30,12 @@
         "material",
         "closure",
         "color"
-      ]
+      ],
+      "note": "衬衫：品类 + 图案 + 领型为必选；场景 + 袖长 + 风格优先补充；面料、闭合方式、颜色按商品实际情况扩展。"
     },
     "jacket": {
       "name": "外套夹克",
       "nameEn": "Jacket / Outerwear",
-      "platformNote": "跨平台参考：品类词优先，其次场景与风格，再补领型/版型/闭合方式和材质颜色。",
       "order": [
         "target",
         "category",
@@ -61,7 +60,8 @@
       "extra": [
         "material",
         "color"
-      ]
+      ],
+      "note": "外套夹克：品类 + 场景 + 风格为必选；领型 + 版型 + 闭合方式优先补充；面料、颜色按商品实际情况扩展。"
     }
   },
   "disclaimer": "生成标题不可以直接使用，请检查后使用。"
