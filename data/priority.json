@@ -161,6 +161,30 @@
       "image": "assets/priority/jacket/item-009.jpg",
       "addedAt": "2026-08-13",
       "sort": 1
+    },
+    {
+  "id": "shirt-new-01",
+  "category": "shirt",
+  "title": "衬衫重点款式 A",
+  "image": "assets/priority/shirt/shirt-20260813-01.jpg",
+  "addedAt": "2026-08-13",
+  "sort": 103
+    },
+    {
+  "id": "shirt-new-02",
+  "category": "shirt",
+  "title": "衬衫重点款式 B",
+  "image": "assets/priority/shirt/shirt-20260813-02.jpg",
+  "addedAt": "2026-08-13",
+  "sort": 102
+    },
+    {
+  "id": "shirt-new-03",
+  "category": "shirt",
+  "title": "衬衫重点款式 C",
+  "image": "assets/priority/shirt/shirt-20260813-03.jpg",
+  "addedAt": "2026-08-13",
+  "sort": 101
     }
   ]
 }
