@@ -1,0 +1,48 @@
+{
+  "version": "2.0",
+  "note": "后续增加/删除 PPT 转 PDF 后，只需修改本文件对应记录，不需要改 HTML。",
+  "items": [
+    {
+      "id": "ref-01",
+      "category": "shirt",
+      "title": "衬衫企划款式参考-工装衬衫",
+      "pdf": "assets/reference/衬衫企划款式参考-工装衬衫.pdf"
+    },
+    {
+      "id": "ref-02",
+      "category": "shirt",
+      "title": "衬衫企划款式参考-休闲衬衫",
+      "pdf": "assets/reference/衬衫企划款式参考-休闲衬衫.pdf"
+    },
+    {
+      "id": "ref-03",
+      "category": "shirt",
+      "title": "衬衫企划款式参考-商务衬衫",
+      "pdf": "assets/reference/衬衫企划款式参考-商务衬衫.pdf"
+    },
+    {
+      "id": "ref-04",
+      "category": "jacket",
+      "title": "夹克外套企划款式参考-都市基础风",
+      "pdf": "assets/reference/jacket-urban-basic.pdf"
+    },
+    {
+      "id": "ref-05",
+      "category": "jacket",
+      "title": "夹克外套企划款式参考-工装/军事类",
+      "pdf": "assets/reference/jacket-workwear-military.pdf"
+    },
+    {
+      "id": "ref-06",
+      "category": "jacket",
+      "title": "夹克外套企划款式参考-皮衣夹克",
+      "pdf": "assets/reference/夹克外套企划款式参考-皮衣夹克.pdf"
+    },
+    {
+      "id": "ref-07",
+      "category": "jacket",
+      "title": "夹克外套企划款式参考-户外机能风",
+      "pdf": "assets/reference/夹克外套企划款式参考-户外机能风.pdf"
+    }
+  ]
+}

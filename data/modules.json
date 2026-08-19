@@ -1,10 +1,35 @@
 {
-  "version":"1.2",
-  "modules":[
-    {"id":"category","title":"类目指引","subtitle":"第一步确认类目路径，一键复制","status":"ready"},
-    {"id":"title","title":"标题优化","subtitle":"衬衫 / 夹克外套分开组合标题","status":"ready"},
-    {"id":"visual","title":"视觉优化","subtitle":"衬衫 / 夹克外套分别维护参考图与指令","status":"ready"},
-    {"id":"reference","title":"需求款式参考","subtitle":"按大类纵向浏览款式企划","status":"ready"},
-    {"id":"priority","title":"最高优先款式","subtitle":"图片集合页，点击图片放大查看","status":"ready"}
+  "version": "2.0",
+  "modules": [
+    {
+      "id": "category",
+      "title": "类目指引",
+      "subtitle": "类目路径一键复制，下面查看完整类目图",
+      "status": "ready"
+    },
+    {
+      "id": "title",
+      "title": "标题优化",
+      "subtitle": "衬衫 / 外套夹克，按维度组合中英文标题",
+      "status": "ready"
+    },
+    {
+      "id": "visual",
+      "title": "视觉优化（AI指令）",
+      "subtitle": "图片优化中心 + AI指令参考，两块独立页面",
+      "status": "ready"
+    },
+    {
+      "id": "reference",
+      "title": "需求款式参考",
+      "subtitle": "衬衫 / 夹克外套分组，纵向查看企划 PDF",
+      "status": "ready"
+    },
+    {
+      "id": "priority",
+      "title": "最高优先款式",
+      "subtitle": "独立图片集合页，更新不影响首页",
+      "status": "ready"
+    }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "version": "2.0",
+  "note": "后续新增图片：上传到 assets/priority/shirt 或 jacket，再在此文件增加一条记录。页面按 addedAt 从新到旧，同日按 sort 从大到小。",
+  "items": [
+    {
+      "id": "shirt-001",
+      "category": "shirt",
+      "title": "衬衫重点款式 1",
+      "image": "assets/priority/shirt/shirt-001.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 100
+    },
+    {
+      "id": "shirt-002",
+      "category": "shirt",
+      "title": "衬衫重点款式 2",
+      "image": "assets/priority/shirt/shirt-002.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 99
+    },
+    {
+      "id": "shirt-003",
+      "category": "shirt",
+      "title": "衬衫重点款式 3",
+      "image": "assets/priority/shirt/shirt-003.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 98
+    },
+    {
+      "id": "jacket-001",
+      "category": "jacket",
+      "title": "夹克外套重点款式 1",
+      "image": "assets/priority/jacket/jacket-001.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 100
+    },
+    {
+      "id": "jacket-002",
+      "category": "jacket",
+      "title": "夹克外套重点款式 2",
+      "image": "assets/priority/jacket/jacket-002.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 99
+    },
+    {
+      "id": "jacket-003",
+      "category": "jacket",
+      "title": "夹克外套重点款式 3",
+      "image": "assets/priority/jacket/jacket-003.jpg",
+      "addedAt": "2026-08-19",
+      "sort": 98
+    }
+  ]
+}
