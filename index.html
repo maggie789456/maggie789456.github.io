@@ -4,114 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>麦杞岐（maggie.xie）对接服务站</title>
-<meta name="description" content="OBM2男装衬衫与夹克外套类目商家对接服务站">
+<meta name="description" content="OBM2男装衬衫与夹克外套类目商家运营工具入口">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="app">
   <aside class="sidebar">
-    <button class="brand-block" data-go="home" aria-label="返回首页">
-      <span class="brand-mark">M</span>
-      <span class="brand-text"><strong>麦杞岐对接服务站</strong><small>maggie.xie · OBM2</small></span>
-    </button>
+    <a class="brand-block" href="index.html" aria-label="返回首页"><span class="brand-mark">M</span><span class="brand-text"><strong>麦杞岐对接服务站</strong><small>maggie.xie · OBM2</small></span></a>
     <div class="side-caption">功能导航</div>
     <nav class="side-nav">
-      <button class="nav-item home-item active" data-go="home"><span>⌂</span><b>首页</b></button>
+      <a class="nav-item active" href="index.html"><span>⌂</span><b>首页</b></a>
       <button class="nav-item" data-go="category"><i>01</i><b>类目指引</b></button>
       <button class="nav-item" data-go="title"><i>02</i><b>标题优化</b></button>
-      <button class="nav-item" data-go="visual"><i>03</i><b>视觉优化</b></button>
-      <button class="nav-item" data-go="reference"><i>04</i><b>需求款式参考</b></button>
-      <button class="nav-item" data-go="priority"><i>05</i><b>最高优先款式</b></button>
+      <a class="nav-item" href="visual.html"><i>03</i><b>视觉优化(AI指令)</b></a>
+      <a class="nav-item" href="reference.html"><i>04</i><b>需求款式参考</b></a>
+      <a class="nav-item" href="priority.html"><i>05</i><b>最高优先款式</b></a>
     </nav>
     <div class="side-bottom">商家运营工具<br><span>内容持续更新</span></div>
   </aside>
 
   <div class="workspace">
-    <header class="topbar">
-      <div><span class="top-dot"></span><span>OBM2 男装衬衫 / 夹克外套类目</span></div>
-      <span id="today"></span>
-    </header>
+    <header class="topbar"><div><span class="top-dot"></span>OBM2 男装衬衫 / 夹克外套类目</div><span id="today"></span></header>
 
-    <section class="notice-strip" aria-label="运营通知">
-      <div class="notice-row hot-row"><span class="notice-icon">🔥</span><b>热搜词</b><span id="hotNotice"></span><time id="hotDate"></time></div>
-      <div class="notice-row update-row"><span class="notice-icon">📣</span><b>近期通知</b><span id="updateNotice"></span><time id="updateDate"></time></div>
+    <section class="ticker-shell">
+      <a class="ticker-item hot" href="notices.html?type=热搜词"><b>🔥 热搜词</b><span id="hotTicker">加载中…</span></a>
+      <a class="ticker-item notice" href="notices.html"><b>📣 近期通知</b><span id="noticeTicker">加载中…</span></a>
     </section>
 
     <main>
       <section id="home" class="page active">
-        <div class="page-head hero-head">
-          <div><div class="eyebrow">SERVICE HUB</div><h1>麦杞岐（maggie.xie）对接服务站</h1><p>OBM2男装衬衫 / 夹克外套类目 · 商家运营工具入口</p></div>
-          <button class="primary" data-go="category">从类目指引开始 →</button>
-        </div>
+        <div class="page-head hero-head"><div><div class="eyebrow">SERVICE HUB</div><h1>麦杞岐（maggie.xie）对接服务站</h1><p>OBM2男装衬衫 / 夹克外套类目 · 商家运营工具入口</p></div><button class="primary" data-go="title">开始标题优化 →</button></div>
         <div class="quick-grid">
-          <button class="quick-card featured" data-go="category"><span class="card-num">01</span><h3>类目指引</h3><p>先确认类目路径，上方一键复制，下方查看完整类目图。</p><span>查看类目 →</span></button>
-          <button class="quick-card" data-go="title"><span class="card-num">02</span><h3>标题优化</h3><p>衬衫 / 外套夹克分开选择维度，自动组合中英文标题。</p><span>进入工具 →</span></button>
-          <button class="quick-card" data-go="visual"><span class="card-num">03</span><h3>视觉优化</h3><p>按衬衫 / 外套夹克查看参考图和 AI 改图指令。</p><span>查看视觉 →</span></button>
-          <button class="quick-card" data-go="reference"><span class="card-num">04</span><h3>需求款式参考</h3><p>按品类查看款式企划方向，改为上下纵向浏览。</p><span>查看参考 →</span></button>
-          <button class="quick-card" data-go="priority"><span class="card-num">05</span><h3>最高优先款式</h3><p>进入图片集合页，点击单张图片放大查看。</p><span>查看重点 →</span></button>
+          <button class="quick-card featured" data-go="title"><span class="card-num">02</span><h3>标题优化</h3><p>衬衫 / 外套夹克，按维度选择词语，自动组合中英文标题。</p><span>进入工具 →</span></button>
+          <button class="quick-card" data-go="category"><span class="card-num">01</span><h3>类目指引</h3><p>上方直接复制类目路径，下方查看完整类目图。</p><span>查看类目 →</span></button>
+          <a class="quick-card" href="visual.html"><span class="card-num">03</span><h3>视觉优化(AI指令)</h3><p>进入图片优化中心，或查看可直接复制的 AI 指令与参考图片。</p><span>进入视觉 →</span></a>
+          <a class="quick-card" href="reference.html"><span class="card-num">04</span><h3>需求款式参考</h3><p>衬衫与夹克外套分组，企划 PDF 纵向查看，后续可增减。</p><span>查看参考 →</span></a>
+          <a class="quick-card" href="priority.html"><span class="card-num">05</span><h3>最高优先款式</h3><p>独立图片集合页，商家可逐张查看；更新图片不影响首页。</p><span>查看重点 →</span></a>
         </div>
+
+        <div class="home-note"><b>更新说明</b><span>热搜词、通知、类目、AI 指令、需求款式和最高优先款式均采用独立数据文件管理，后续尽量做到“换文件 / 加记录即可更新”。</span><a href="notices.html">查看全部通知 →</a></div>
       </section>
 
       <section id="category" class="page">
-        <div class="page-head"><div><div class="eyebrow">01 / CATEGORY</div><h2>类目指引</h2><p>第一步先确认商品所属大类；上方复制类目路径，下方查看完整类目图。</p></div></div>
-        <div class="major-tabs" data-group="category">
-          <button class="major-tab active" data-value="衬衫">衬衫</button>
-          <button class="major-tab" data-value="外套夹克">夹克外套</button>
-        </div>
+        <div class="page-head"><div><div class="eyebrow">01 / CATEGORY</div><h2>类目指引</h2><p>上方是可复制类目路径，下方保留完整类目图。类目数据可独立更新。</p></div></div>
+        <div class="category-filter" id="categoryFilters"></div>
         <div id="categoryList" class="category-list"></div>
-        <div class="category-image-card"><div class="subhead"><div><b>完整类目指引图</b><span>下方为原始类目图 · 仅作运营参考</span></div></div><img src="assets/category/category-guide.png" alt="类目指引图"></div>
+        <div class="category-image-card"><div class="subhead"><div><b>类目指引图</b><span>原始类目图 · 仅作运营参考</span></div></div><img src="assets/category/category-guide.png" alt="类目指引图"></div>
       </section>
 
       <section id="title" class="page">
-        <div class="page-head"><div><div class="eyebrow">02 / TITLE</div><h2>标题优化</h2><p>先选择商品大类，再按维度选词并自动组合。<strong>生成标题不可以直接使用，请检查后使用。</strong></p></div></div>
-        <div class="major-tabs" data-group="title">
-          <button class="major-tab active" data-value="shirt">衬衫 <small>Shirt</small></button>
-          <button class="major-tab" data-value="jacket">夹克外套 <small>Jacket / Outerwear</small></button>
-        </div>
+        <div class="page-head"><div><div class="eyebrow">02 / TITLE</div><h2>标题优化</h2><p>选择商品类型 → 按维度选词 → 自动组合中英文标题。<strong>生成标题不可以直接使用，请检查后使用。</strong></p></div></div>
         <div class="title-layout">
-          <div class="builder-card">
-            <div class="rule-note" id="titleRuleNote"></div>
-            <div id="dimensionForm"></div>
-          </div>
-          <div class="result-card">
-            <div class="result-head"><div><span class="eyebrow">LIVE RESULT</span><h3>标题预览</h3></div><span class="score" id="score">0 / 100</span></div>
-            <div class="warning">⚠ 生成标题不可以直接使用，请检查后使用。请确认商品属性、品牌词、敏感词及商品实际情况。</div>
-            <label>中文标题</label><div class="title-output" id="zhOutput">请选择词语</div><button class="copy-btn" data-copy="zhOutput">复制中文标题</button>
-            <label>English Title</label><div class="title-output en" id="enOutput">Select keywords</div><button class="copy-btn" data-copy="enOutput">复制英文标题</button>
-            <div class="coverage" id="coverage"></div>
-          </div>
+          <div class="builder-card"><div class="switch"><button class="product-tab active" data-product="shirt">衬衫 <small>Shirt</small></button><button class="product-tab" data-product="jacket">外套夹克 <small>Jacket / Outerwear</small></button></div><div class="rule-note">组合原则：先完成必选维度，再补充高优维度，最后按实际商品情况扩展属性。</div><div id="dimensionForm"></div></div>
+          <div class="result-card"><div class="result-head"><div><span class="eyebrow">LIVE RESULT</span><h3>标题预览</h3></div><span class="score" id="score">0 / 100</span></div><div class="warning">⚠ 生成标题不可以直接使用，请检查后使用。请确认商品属性、品牌词、敏感词及商品实际情况。</div><label>中文标题</label><div class="title-output" id="zhOutput">请选择词语</div><button class="copy-btn" data-copy="zhOutput">复制中文标题</button><label>English Title</label><div class="title-output en" id="enOutput">Select keywords</div><button class="copy-btn" data-copy="enOutput">复制英文标题</button><div class="coverage" id="coverage"></div></div>
         </div>
-      </section>
-
-      <section id="visual" class="page">
-        <div class="page-head"><div><div class="eyebrow">03 / VISUAL</div><h2>视觉优化</h2><p>按商品大类进入对应视觉参考；目前先完成衬衫示例。</p></div></div>
-        <div class="major-tabs" data-group="visual">
-          <button class="major-tab active" data-value="shirt">衬衫</button>
-          <button class="major-tab" data-value="jacket">夹克外套</button>
-        </div>
-        <div id="visualContent"></div>
-      </section>
-
-      <section id="reference" class="page">
-        <div class="page-head"><div><div class="eyebrow">04 / REFERENCE</div><h2>需求款式参考</h2><p>按商品大类纵向浏览，避免左右并排过小；点击可打开完整 PDF。</p></div></div>
-        <div class="major-tabs" data-group="reference">
-          <button class="major-tab active" data-value="shirt">衬衫</button>
-          <button class="major-tab" data-value="jacket">夹克外套</button>
-        </div>
-        <div id="referenceContent"></div>
-      </section>
-
-      <section id="priority" class="page">
-        <div class="page-head"><div><div class="eyebrow">05 / PRIORITY</div><h2>最高优先款式</h2><p>图片集合页：点击任意图片即可放大查看，适合商家快速浏览重点方向。</p></div><a class="primary link-button" href="priority.html">进入图片集合页 →</a></div>
-        <div class="priority-entry-grid">
-          <button class="priority-entry active" data-priority-link="shirt"><span>01</span><b>衬衫重点款式</b><small>10 张参考图 · 点击进入集合页</small></button>
-          <button class="priority-entry" data-priority-link="jacket"><span>02</span><b>夹克外套重点款式</b><small>10 张参考图 · 点击进入集合页</small></button>
-        </div>
-        <div class="priority-preview" id="priorityPreview"></div>
       </section>
     </main>
 
-    <footer><b>麦杞岐（maggie.xie）对接服务站</b><span>OBM2男装衬衫 / 夹克外套类目</span><span>内容持续更新 · V1.3</span><div class="site-disclaimer">声明：本网页所有功能只提供建议，不负任何法律责任；所有资源来源于互联网。图片仅供参考，不可侵权。如有功能更新需求，请联系麦杞岐（maggie.xie）。</div></footer>
+    <footer><b>麦杞岐（maggie.xie）对接服务站</b><span>OBM2男装衬衫 / 夹克外套类目</span><span>本网页所有功能只提供建议，不负任何法律责任，所有资源来源于互联网。图片仅供参考，不可侵权。</span><span>功能更新请联系麦杞岐（maggie.xie）</span></footer>
   </div>
 </div>
 <script src="script.js"></script>

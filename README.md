@@ -1,111 +1,67 @@
-# Maggie789456 商品优化工作台 V1
+# 麦杞岐（maggie.xie）对接服务站 V2
 
-这是一个可直接部署到 `maggie789456.github.io` 的纯 HTML/CSS/JavaScript 第一版。
+这是在 `maggie_site_v1_1_update` 基础上优化的 GitHub Pages 静态网站版本。
 
-## V1 已实现
+## 页面结构
 
-- 首页 Dashboard，作为后续所有功能入口
-- 标题优化
-- 衬衫 / 夹克外套切换
-- 通用 / Amazon / SHEIN / Temu 平台切换
-- 读取用户 Excel 转换后的 319 条关键词 JSON
-- 按 `title_rules.json` 的优先级组合标题
-- 标题健康度评分
-- 标题诊断
-- 关键词库搜索、维度筛选、分页
-- 本地历史记录
-- 图片优化预留入口
+- `index.html`：首页、类目指引、标题优化
+- `visual.html`：视觉优化（AI指令）入口
+- `image-optimization.html`：图片优化中心（独立页面）
+- `ai-prompts.html`：AI 指令 + 参考图片独立页面
+- `reference.html`：需求款式参考独立页面，衬衫/夹克外套上下纵向展示
+- `priority.html`：最高优先款式独立图片集合页
+- `notices.html`：全部通知页面
 
-## 文件结构
+## 后续最常改的文件
 
-```text
-maggie789456.github.io/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── data/
-    ├── keyword_library.json
-    ├── title_rules.json
-    ├── image_rules.json
-    └── product_optimizer_config.json
-```
+### 1. 每周更新热搜词 / 通知
+只改：`data/notices.json`
 
-## GitHub 上传
+建议新增一条记录，不需要改 HTML/JS。首页会自动读取最新日期；首页只展示两条一行播报，点击进入 `notices.html` 看全部。
 
-### 方法 A：网页上传
+### 2. 更新类目
+只改：`data/category_guide.json`
 
-在 GitHub 仓库中：
+每一条至少包含：`id / category / tag / season / path`。
+可用 `category`：`衬衫`、`夹克外套`、`户外套装`、`其他类目`。
+删除一条记录即可从网页隐藏。
 
-1. `Add file`
-2. `Upload files`
-3. 上传 `index.html`
-4. 上传 `style.css`
-5. 上传 `script.js`
-6. 上传 `README.md`
-7. 新建 `data` 文件夹并上传 4 个 JSON
-8. `Commit changes`
+### 3. 更新 AI 指令
+只改：`data/ai_prompts.json`，并把图片上传到 `assets/visual/`。
 
-### 方法 B：Git
+图片路径示例：`assets/visual/shirt-visual-example.png`
 
-如果已经把项目下载到电脑：
+### 4. 更新需求款式参考
+把 PPT 转成 PDF 后上传到：`assets/reference/`
+然后只修改：`data/reference_pdfs.json`
 
-```bash
-git clone https://github.com/maggie789456/maggie789456.github.io.git
-cd maggie789456.github.io
+网页会按“衬衫 / 夹克外套”两个组纵向排列，不需要修改 HTML。
 
-# 把本项目全部文件复制到这个目录
+### 5. 更新最高优先款式
+这是独立页面，主页不会被图片数量影响。
 
-git add .
-git commit -m "feat: launch product optimizer v1"
-git push origin main
-```
+图片放：
+- `assets/priority/shirt/`
+- `assets/priority/jacket/`
 
-## 开启 GitHub Pages
+然后在 `data/priority_items.json` 增加一条记录。页面按 `addedAt` 新到旧、同日按 `sort` 大到小排列。
 
-进入仓库：
+推荐文件名：`shirt-004.jpg`、`jacket-004.jpg`。
 
-`Settings → Pages`
+## GitHub 更新原则
 
-在 `Build and deployment` 中：
+如果你当前仓库的线上版本就是这个项目，直接在 GitHub 的 `main` 分支更新即可。
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
+最简单的方法：
+1. 打开仓库的 `main` 分支。
+2. 点击 `Add file` → `Upload files`。
+3. 把本项目中需要更新的文件拖进去。
+4. GitHub 如果提示同名文件，选择覆盖/替换。
+5. 点击 `Commit changes`。
+6. 等待 GitHub Pages 自动部署。
 
-保存后访问：
+不要把整个 zip 文件上传到仓库根目录。应该把 zip 里面的文件夹和文件上传到对应路径。
 
-`https://maggie789456.github.io/`
+## 声明
 
-首次部署可能需要一点时间。
-
-## 注意
-
-本版本的“生成标题”是前端规则引擎，不调用外部 AI API。这样可以先把产品流程跑通。
-
-下一阶段可以把 `generateTitle()` 替换成自己的 AI API 接口，例如：
-
-```text
-浏览器
-  ↓
-/api/title
-  ↓
-你的后端
-  ↓
-AI模型
-  ↓
-规则校验
-  ↓
-返回标题
-```
-
-不要把 AI API Key 直接写在 `script.js` 中。
-
-## 下一阶段建议
-
-1. 增加真正 AI 标题生成
-2. 增加夹克专属标题优先级表
-3. 增加平台规则后台
-4. 增加关键词管理后台
-5. 增加图片优化
-6. 增加商家登录与历史云端保存
+本网页所有功能只提供建议，不负任何法律责任，所有资源来源于互联网。图片仅供参考，不可侵权。如果有功能更新需求请联系麦杞岐（maggie.xie）
