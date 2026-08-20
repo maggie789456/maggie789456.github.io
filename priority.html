@@ -1,1 +1,109 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>最高优先款式｜麦杞岐对接服务站</title><link rel="stylesheet" href="style.css"></head><body><div class="standalone-shell"><div class="standalone-head"><a class="back-link" href="index.html">← 返回服务站首页</a><div class="eyebrow">05 / PRIORITY</div><h1>最高优先款式</h1><p>独立图片集合页。点击图片可放大查看；更新图片不会影响首页。新增图片只需上传图片 + 修改 data/priority_items.json。</p></div><div class="priority-tabs"><button class="priority-tab active" data-cat="shirt">衬衫</button><button class="priority-tab" data-cat="jacket">夹克外套</button></div><div class="priority-grid" id="grid"></div></div><div class="lightbox" id="lightbox"><button id="close">×</button><img id="lightImg" alt="款式大图"></div><script>let all=[];let cat='shirt';const $=s=>document.querySelector(s);async function init(){const d=await fetch('data/priority_items.json').then(r=>r.json());all=d.items||[];render();document.querySelectorAll('.priority-tab').forEach(b=>b.onclick=()=>{cat=b.dataset.cat;document.querySelectorAll('.priority-tab').forEach(x=>x.classList.toggle('active',x===b));render()});$('#close').onclick=close;$('#lightbox').onclick=e=>{if(e.target.id==='lightbox')close()};}function render(){const arr=all.filter(x=>x.category===cat).sort((a,b)=>String(b.addedAt).localeCompare(String(a.addedAt))||Number(b.sort)-Number(a.sort));$('#grid').innerHTML=arr.map(x=>`<article class="priority-card" data-img="${x.image}"><img src="${x.image}" alt="${x.title}" loading="lazy"><b>${x.title}</b><small>更新：${x.addedAt}</small></article>`).join('');document.querySelectorAll('.priority-card').forEach(c=>c.onclick=()=>{const img=c.dataset.img;$('#lightImg').src=img;$('#lightbox').classList.add('open')})}function close(){$('#lightbox').classList.remove('open')}init();</script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>最高优先款式｜麦杞岐对接服务站</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body class="priority-page">
+  <aside class="priority-side">
+    <a class="priority-back" href="index.html">← 返回服务站首页</a>
+    <div class="priority-side-title"><span>05 / PRIORITY</span><strong>最高优先款式</strong></div>
+    <nav id="priorityNav" class="priority-nav" aria-label="款式区域导航"></nav>
+    <div class="priority-side-note">点击区域可直接滚动定位。页面会自动高亮当前浏览位置。</div>
+  </aside>
+
+  <main class="priority-main">
+    <section class="priority-hero" id="priorityTop">
+      <div class="eyebrow">STYLE REFERENCE / LOOKBOOK</div>
+      <h1>最高优先款式</h1>
+      <p>夹克外套优先展示，其次为衬衫。所有款式均展示在同一个页面，可按左侧导航快速定位欧区、美区、拉美。</p>
+      <div class="priority-submit-tip">✦ 有类似款请复制 <b>款式编号</b> + <b>商品SPU</b> 提报给麦杞岐（maggie.xie）</div>
+    </section>
+    <div id="priorityStatus" class="priority-status">正在读取款式数据…</div>
+    <div id="priorityContent"></div>
+    <section class="priority-disclaimer">
+      <b>声明</b>
+      <p>本页面展示内容仅作为款式参考，不构成任何权利授权或使用许可。图片及款式仅供参考，请勿侵权使用；用户应自行核实相关知识产权、图片版权及商品合规性。本人不承担因使用、复制、生产、销售或传播相关参考内容产生的法律责任。</p>
+    </section>
+  </main>
+
+  <div class="priority-lightbox" id="priorityLightbox" aria-hidden="true">
+    <button class="priority-lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+    <button class="priority-lightbox-prev" id="lightboxPrev" aria-label="上一张">‹</button>
+    <div class="priority-lightbox-panel">
+      <img id="lightboxImage" alt="款式大图">
+      <div class="priority-lightbox-info" id="lightboxInfo"></div>
+      <button class="priority-search-btn" id="imageSearchBtn">🔍 搜索识别图片同款</button>
+    </div>
+    <button class="priority-lightbox-next" id="lightboxNext" aria-label="下一张">›</button>
+  </div>
+
+<script>
+const EXCEL_URL='data/priority-styles.xlsx';
+const REQUIRED_HEADERS=['区域','类目','站内叶子类目名称','行业id','行业图片url','提需时间'];
+const CATEGORY_ORDER=['外套夹克','衬衫'];
+const REGION_ORDER=['欧区','美区','拉美'];
+let records=[], lightboxIndex=0;
+const $=s=>document.querySelector(s);
+
+function esc(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function norm(v){return String(v??'').trim();}
+function dateValue(v){
+  if(v instanceof Date && !isNaN(v)) return v.getTime();
+  const s=norm(v); if(!s) return 0;
+  const t=Date.parse(s.replace(/年|月/g,'-').replace(/日/g,''));
+  return isNaN(t)?0:t;
+}
+function copyText(text,btn){
+  navigator.clipboard.writeText(text).then(()=>{const old=btn.textContent;btn.textContent='已复制';setTimeout(()=>btn.textContent=old,1200);}).catch(()=>prompt('请复制以下内容：',text));
+}
+function regionId(category,region){return `section-${encodeURIComponent(category)}-${encodeURIComponent(region)}`;}
+function makeNav(){
+  $('#priorityNav').innerHTML=CATEGORY_ORDER.map(cat=>`<div class="priority-nav-group"><button class="priority-nav-cat" data-target="section-${cat}">${cat}</button>${REGION_ORDER.map(r=>`<button class="priority-nav-region" data-target="${regionId(cat,r)}">${r}</button>`).join('')}</div>`).join('');
+  $('#priorityNav').addEventListener('click',e=>{const b=e.target.closest('[data-target]');if(!b)return;document.getElementById(b.dataset.target)?.scrollIntoView({behavior:'smooth',block:'start'});});
+}
+function card(r,i){return `<article class="priority-style-card" data-index="${i}"><button class="priority-image-btn" aria-label="放大查看 ${esc(r.id)}"><img src="${esc(r.image)}" alt="${esc(r.path||r.category)}" loading="lazy"></button><div class="priority-meta"><div><span>类目路径：</span><b>${esc(r.path||'-')}</b><button class="priority-copy" data-copy="${esc(r.path||'')}">复制</button></div><div><span>款式编号：</span><b>${esc(r.id||'-')}</b><button class="priority-copy" data-copy="${esc(r.id||'')}">复制</button></div><div><span>更新时间：</span><b>${esc(r.updated||'-')}</b></div></div></article>`;}
+function render(){
+  const content=$('#priorityContent');
+  content.innerHTML=CATEGORY_ORDER.map(cat=>{
+    const catRows=records.filter(r=>r.category===cat);
+    return `<section class="priority-category" id="section-${cat}"><div class="priority-category-head"><span>${cat==='外套夹克'?'01':'02'} / CATEGORY</span><h2>${cat}</h2><em>${catRows.length} 个款式</em></div>${REGION_ORDER.map(region=>{
+      const rows=catRows.filter(r=>r.region===region).sort((a,b)=>b.time-a.time);
+      return `<section class="priority-region" id="${regionId(cat,region)}"><div class="priority-region-head"><h3>${region}</h3><span>${rows.length} 个款式 · 最新优先</span></div>${rows.length?`<div class="priority-style-grid">${rows.map(r=>card(r,records.indexOf(r))).join('')}</div>`:'<div class="priority-empty">暂未提供该区域款式参考</div>'}</section>`;
+    }).join('')}</section>`;
+  }).join('');
+  content.addEventListener('click',e=>{
+    const copy=e.target.closest('.priority-copy');if(copy){e.stopPropagation();copyText(copy.dataset.copy,copy);return;}
+    const img=e.target.closest('.priority-image-btn');if(img){const card=img.closest('.priority-style-card');openLightbox(Number(card.dataset.index));}
+  });
+  setupObserver();
+}
+function setupObserver(){
+  const buttons=[...document.querySelectorAll('#priorityNav [data-target]')];
+  const obs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting){buttons.forEach(b=>b.classList.toggle('active',b.dataset.target===en.target.id));}});},{rootMargin:'-25% 0px -60% 0px',threshold:0});
+  document.querySelectorAll('.priority-category,.priority-region').forEach(x=>obs.observe(x));
+}
+function openLightbox(index){lightboxIndex=index;const r=records[index];if(!r)return;$('#lightboxImage').src=r.image;$('#lightboxImage').alt=r.path||r.category;$('#lightboxInfo').innerHTML=`<div><span>类目路径</span><b>${esc(r.path||'-')}</b><button class="priority-copy light-copy" data-copy="${esc(r.path||'')}">复制</button></div><div><span>款式编号</span><b>${esc(r.id||'-')}</b><button class="priority-copy light-copy" data-copy="${esc(r.id||'')}">复制</button></div><div><span>更新时间</span><b>${esc(r.updated||'-')}</b></div>`;$('#priorityLightbox').classList.add('open');$('#priorityLightbox').setAttribute('aria-hidden','false');}
+function closeLightbox(){$('#priorityLightbox').classList.remove('open');$('#priorityLightbox').setAttribute('aria-hidden','true');}
+function moveLightbox(step){openLightbox((lightboxIndex+step+records.length)%records.length);}
+async function loadExcel(){
+  try{
+    const res=await fetch(EXCEL_URL+'?v='+Date.now());if(!res.ok)throw new Error('未找到 '+EXCEL_URL);
+    const wb=XLSX.read(await res.arrayBuffer(),{type:'array',cellDates:true});
+    const ws=wb.Sheets[wb.SheetNames[0]];const rows=XLSX.utils.sheet_to_json(ws,{defval:'',raw:false});
+    const keys=rows.length?Object.keys(rows[0]):[];const missing=REQUIRED_HEADERS.filter(h=>!keys.includes(h));if(missing.length)throw new Error('Excel 缺少列：'+missing.join('、'));
+    records=rows.map(row=>({region:norm(row['区域']),category:norm(row['类目']),path:norm(row['站内叶子类目名称']),id:norm(row['行业id']),image:norm(row['行业图片url']),updated:norm(row['提需时间']),time:dateValue(row['提需时间'])})).filter(r=>CATEGORY_ORDER.includes(r.category)&&REGION_ORDER.includes(r.region)&&r.image);
+    records.sort((a,b)=>CATEGORY_ORDER.indexOf(a.category)-CATEGORY_ORDER.indexOf(b.category)||REGION_ORDER.indexOf(a.region)-REGION_ORDER.indexOf(b.region)||b.time-a.time);
+    $('#priorityStatus').textContent=`已读取 ${records.length} 个款式 · 数据按「提需时间」最新优先展示`;
+    makeNav();render();
+  }catch(err){$('#priorityStatus').classList.add('error');$('#priorityStatus').innerHTML=`读取 Excel 失败：${esc(err.message)}。请确认文件路径为 <b>data/priority-styles.xlsx</b>，且保留原有列名。`;makeNav();render();}
+}
+$('#lightboxClose').onclick=closeLightbox;$('#lightboxPrev').onclick=()=>moveLightbox(-1);$('#lightboxNext').onclick=()=>moveLightbox(1);$('#priorityLightbox').onclick=e=>{if(e.target===e.currentTarget)closeLightbox();const b=e.target.closest('.light-copy');if(b)copyText(b.dataset.copy,b);};
+$('#imageSearchBtn').onclick=()=>{const r=records[lightboxIndex];if(!r)return;window.open('https://lens.google.com/uploadbyurl?url='+encodeURIComponent(r.image),'_blank','noopener');};
+document.addEventListener('keydown',e=>{if(!$('#priorityLightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')moveLightbox(-1);if(e.key==='ArrowRight')moveLightbox(1);});
+loadExcel();
+</script>
+</body></html>
